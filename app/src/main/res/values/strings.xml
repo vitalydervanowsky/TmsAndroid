@@ -56,4 +56,8 @@
     <string name="factorial">Factorial</string>
     <string name="number">Number</string>
     <string name="toBinary">toBinary()</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="reset">Reset</string>
+    <string name="time_in_seconds">time in seconds</string>
 </resources>
