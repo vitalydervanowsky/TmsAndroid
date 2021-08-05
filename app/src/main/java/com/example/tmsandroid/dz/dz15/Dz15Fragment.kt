@@ -52,12 +52,12 @@ class Dz15Fragment : Fragment() {
                     .commit()
             }
 
-//            btnTask4.setOnClickListener {
-//                parentFragmentManager.beginTransaction()
-//                    .addToBackStack(null)
-//                    .replace(R.id.container, Dz15Task4Fragment())
-//                    .commit()
-//            }
+            btnTask4.setOnClickListener {
+                parentFragmentManager.beginTransaction()
+                    .addToBackStack(null)
+                    .replace(R.id.container, Dz15Task4Fragment())
+                    .commit()
+            }
         }
     }
 
