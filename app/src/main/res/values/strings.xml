@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TmsAndroid</string>
+    <string name="dz14">dz14</string>
+    <string name="dz15">dz15</string>
+    <string name="dz16">dz16</string>
+    <string name="dz17">dz17</string>
+    <string name="dz18">dz18</string>
+    <string name="dz19">dz19</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
