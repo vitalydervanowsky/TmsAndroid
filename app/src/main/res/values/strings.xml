@@ -6,6 +6,18 @@
     <string name="dz17">dz17</string>
     <string name="dz18">dz18</string>
     <string name="dz19">dz19</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="task1">Task1</string>
+    <string name="task2">Task2</string>
+    <string name="task3">Task3</string>
+    <string name="edit_ask_question_default">Введите свой вопрос</string>
+    <string name="button">Answer</string>
+    <string name="show_answer">Show answer</string>
+    <string name="next_puzzle">Next Puzzle</string>
+    <string name="default_string">…</string>
+    <string name="check_answer">Check</string>
+    <string name="your_answer">Your answer</string>
+    <string name="equals">=</string>
+    <string name="zero">0</string>
+    <string name="plus">+</string>
 </resources>
