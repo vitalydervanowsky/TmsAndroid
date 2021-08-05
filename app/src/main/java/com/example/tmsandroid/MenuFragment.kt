@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import com.example.tmsandroid.databinding.FragmentMenuBinding
 import com.example.tmsandroid.dz.dz14.Dz14Fragment
 import com.example.tmsandroid.dz.dz15.Dz15Fragment
+import com.example.tmsandroid.dz.dz16.Dz16Fragment
 
 class MenuFragment : Fragment() {
     private var _binding: FragmentMenuBinding? = null
@@ -39,6 +40,13 @@ class MenuFragment : Fragment() {
             parentFragmentManager.beginTransaction()
                 .addToBackStack(null)
                 .replace(R.id.container, Dz15Fragment())
+                .commit()
+        }
+
+        binding.bDz16.setOnClickListener {
+            parentFragmentManager.beginTransaction()
+                .addToBackStack(null)
+                .replace(R.id.container, Dz16Fragment())
                 .commit()
         }
     }
