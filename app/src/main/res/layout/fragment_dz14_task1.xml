@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".dz.dz14.Dz14Fragment">
+    tools:context=".dz.dz14.Dz14Task1Fragment">
 
     <EditText
         android:id="@+id/edit_ask_question"
