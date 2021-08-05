@@ -44,14 +44,14 @@ class Dz15Fragment : Fragment() {
                     .replace(R.id.container, Dz15Task2Fragment())
                     .commit()
             }
-//
-//            btnTask3.setOnClickListener {
-//                parentFragmentManager.beginTransaction()
-//                    .addToBackStack(null)
-//                    .replace(R.id.container, Dz15Task3Fragment())
-//                    .commit()
-//            }
-//
+
+            btnTask3.setOnClickListener {
+                parentFragmentManager.beginTransaction()
+                    .addToBackStack(null)
+                    .replace(R.id.container, Dz15Task3Fragment())
+                    .commit()
+            }
+
 //            btnTask4.setOnClickListener {
 //                parentFragmentManager.beginTransaction()
 //                    .addToBackStack(null)
