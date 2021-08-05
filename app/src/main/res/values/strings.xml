@@ -11,6 +11,9 @@
     <string name="task2">Task2</string>
     <string name="task3">Task3</string>
     <string name="task4">Task4</string>
+    <string name="task5">Task5</string>
+    <string name="task6">Task6</string>
+    <string name="task7">Task7</string>
     <string name="edit_ask_question_default">Введите свой вопрос</string>
     <string name="button">Answer</string>
     <string name="show_answer">Show answer</string>
@@ -39,4 +42,18 @@
     <string name="legs">Legs</string>
     <string name="try_jump">Jump</string>
     <string name="result_of_jumping">Result of jumping</string>
+    <string name="a">a =</string>
+    <string name="b">b =</string>
+    <string name="run">Run</string>
+    <string name="result">Result</string>
+    <string name="c">с =</string>
+    <string name="rate">Rate</string>
+    <string name="enter_rating">Enter rating</string>
+    <string name="_1st_letter">1st letter</string>
+    <string name="x">x =</string>
+    <string name="y">y =</string>
+    <string name="_2nd_letter">2nd letter</string>
+    <string name="factorial">Factorial</string>
+    <string name="number">Number</string>
+    <string name="toBinary">toBinary()</string>
 </resources>
