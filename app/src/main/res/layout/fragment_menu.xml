@@ -60,4 +60,17 @@
             android:text="@string/dz19" />
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/b_dz20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:text="@string/dz20" />
+
+    </LinearLayout>
+
 </LinearLayout>
