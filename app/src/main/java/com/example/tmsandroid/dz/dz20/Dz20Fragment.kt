@@ -13,7 +13,7 @@ class Dz20Fragment : Fragment() {
     private val binding get() = _binding!!
 
     private val timer by lazy {
-        ViewModelProvider(this).get(Timer::class.java)
+        ViewModelProvider(this).get(TimerViewModel::class.java)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {

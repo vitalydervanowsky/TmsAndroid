@@ -4,7 +4,7 @@ import android.os.CountDownTimer
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class Timer : ViewModel() {
+class TimerViewModel : ViewModel() {
 
     val liveData = MutableLiveData<String>()
 
