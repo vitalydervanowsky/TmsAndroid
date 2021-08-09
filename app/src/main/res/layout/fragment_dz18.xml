@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dz.dz18.Dz18Fragment">
+
+    <TextView
+        android:id="@+id/tv_brest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/brest"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_vitebsk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/vitebsk"
+        app:layout_constraintStart_toEndOf="@+id/tv_brest"
+        app:layout_constraintTop_toTopOf="@+id/tv_brest" />
+
+    <TextView
+        android:id="@+id/tv_gomel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/gomel"
+        app:layout_constraintStart_toEndOf="@+id/tv_vitebsk"
+        app:layout_constraintTop_toTopOf="@+id/tv_vitebsk" />
+
+    <TextView
+        android:id="@+id/tv_grodno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/grodno"
+        app:layout_constraintStart_toEndOf="@+id/tv_gomel"
+        app:layout_constraintTop_toTopOf="@+id/tv_gomel" />
+
+    <TextView
+        android:id="@+id/tv_mogilev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/mogilev"
+        app:layout_constraintStart_toEndOf="@+id/tv_grodno"
+        app:layout_constraintTop_toTopOf="@+id/tv_grodno" />
+
+    <TextView
+        android:id="@+id/tv_minsk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/minsk"
+        app:layout_constraintStart_toEndOf="@+id/tv_mogilev"
+        app:layout_constraintTop_toTopOf="@+id/tv_mogilev" />
+
+    <TextView
+        android:id="@+id/tv_brest_potato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text=""
+        app:layout_constraintStart_toStartOf="@+id/tv_brest"
+        app:layout_constraintTop_toBottomOf="@+id/tv_brest" />
+
+    <TextView
+        android:id="@+id/tv_vitebsk_potato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintStart_toStartOf="@+id/tv_vitebsk"
+        app:layout_constraintTop_toTopOf="@+id/tv_brest_potato" />
+
+    <TextView
+        android:id="@+id/tv_gomel_potato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintStart_toStartOf="@+id/tv_gomel"
+        app:layout_constraintTop_toTopOf="@+id/tv_vitebsk_potato" />
+
+    <TextView
+        android:id="@+id/tv_grodno_potato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintStart_toStartOf="@+id/tv_grodno"
+        app:layout_constraintTop_toTopOf="@+id/tv_gomel_potato" />
+
+    <TextView
+        android:id="@+id/tv_mogilev_potato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintStart_toStartOf="@+id/tv_mogilev"
+        app:layout_constraintTop_toTopOf="@+id/tv_grodno_potato" />
+
+    <TextView
+        android:id="@+id/tv_minsk_potato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintStart_toStartOf="@+id/tv_minsk"
+        app:layout_constraintTop_toTopOf="@+id/tv_mogilev_potato" />
+
+    <TextView
+        android:id="@+id/tv_brest_cabbage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text=""
+        app:layout_constraintStart_toStartOf="@+id/tv_brest"
+        app:layout_constraintTop_toBottomOf="@+id/tv_brest_potato" />
+
+    <TextView
+        android:id="@+id/tv_vitebsk_cabbage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintStart_toStartOf="@+id/tv_vitebsk"
+        app:layout_constraintTop_toTopOf="@+id/tv_brest_cabbage" />
+
+    <TextView
+        android:id="@+id/tv_gomel_cabbage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintStart_toStartOf="@+id/tv_gomel"
+        app:layout_constraintTop_toTopOf="@+id/tv_vitebsk_cabbage" />
+
+    <TextView
+        android:id="@+id/tv_grodno_cabbage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintStart_toStartOf="@+id/tv_grodno"
+        app:layout_constraintTop_toTopOf="@+id/tv_gomel_cabbage" />
+
+    <TextView
+        android:id="@+id/tv_mogilev_cabbage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintStart_toStartOf="@+id/tv_mogilev"
+        app:layout_constraintTop_toTopOf="@+id/tv_grodno_cabbage" />
+
+    <TextView
+        android:id="@+id/tv_minsk_cabbage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintStart_toStartOf="@+id/tv_minsk"
+        app:layout_constraintTop_toTopOf="@+id/tv_mogilev_cabbage" />
+
+    <TextView
+        android:id="@+id/tv_brest_beet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text=""
+        app:layout_constraintStart_toStartOf="@+id/tv_brest"
+        app:layout_constraintTop_toBottomOf="@+id/tv_brest_cabbage" />
+
+    <TextView
+        android:id="@+id/tv_vitebsk_beet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintStart_toStartOf="@+id/tv_vitebsk"
+        app:layout_constraintTop_toTopOf="@+id/tv_brest_beet" />
+
+    <TextView
+        android:id="@+id/tv_gomel_beet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintStart_toStartOf="@+id/tv_gomel"
+        app:layout_constraintTop_toTopOf="@+id/tv_vitebsk_beet" />
+
+    <TextView
+        android:id="@+id/tv_grodno_beet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintStart_toStartOf="@+id/tv_grodno"
+        app:layout_constraintTop_toTopOf="@+id/tv_gomel_beet" />
+
+    <TextView
+        android:id="@+id/tv_mogilev_beet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintStart_toStartOf="@+id/tv_mogilev"
+        app:layout_constraintTop_toTopOf="@+id/tv_grodno_beet" />
+
+    <TextView
+        android:id="@+id/tv_minsk_beet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintStart_toStartOf="@+id/tv_minsk"
+        app:layout_constraintTop_toTopOf="@+id/tv_mogilev_beet" />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text=""
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_brest_beet" />
+
+    <Button
+        android:id="@+id/b_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_result" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
