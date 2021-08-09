@@ -78,7 +78,7 @@ class MenuFragment : Fragment() {
         binding.bDz20.setOnClickListener {
             parentFragmentManager.beginTransaction()
                 .addToBackStack(null)
-                .replace(R.id.container, Dz20Fragment()
+                .replace(R.id.container, Dz20Fragment())
                 .commit()
         }
     }
