@@ -3,22 +3,29 @@ package com.example.tmsandroid.dz.dz20
 import android.os.CountDownTimer
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
+import kotlinx.coroutines.launch
 
 class TimerViewModel : ViewModel() {
 
-    val liveData = MutableLiveData<String>()
+    val stringLiveData = MutableLiveData<String>()
+    val isFinishLiveData = MutableLiveData<Boolean>()
+    val isStartedLiveData = MutableLiveData<Boolean>()
 
     fun startTimer(mSeconds: Long) {
-        object : CountDownTimer(mSeconds, 1000) {
-            override fun onTick(millisUntilFinished: Long) {
-                val s = "seconds remaining: " + millisUntilFinished / 1000
-                liveData.value = s
-            }
+        viewModelScope.launch {
+            object : CountDownTimer(mSeconds, 1000) {
+                override fun onTick(millisUntilFinished: Long) {
+                    val s = "seconds remaining: " + millisUntilFinished / 1000
+                    stringLiveData.value = s
+                    isStartedLiveData.value = true
+                }
 
-            override fun onFinish() {
-                val s = "done!"
-                liveData.value = s
-            }
-        }.start()
+                override fun onFinish() {
+                    isFinishLiveData.value = true
+                    isStartedLiveData.value = false
+                }
+            }.start()
+        }
     }
 }

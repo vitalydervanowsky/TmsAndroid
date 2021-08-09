@@ -13,11 +13,12 @@ class MainActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        val menuFragment = MenuFragment()
-        val fragmentManager = supportFragmentManager
-        if (fragmentManager.findFragmentById(binding.container.id) == null)
-            fragmentManager.beginTransaction()
-                .add(binding.container.id, menuFragment)
+        val id = binding.container.id
+        val fm = supportFragmentManager
+        if (fm.findFragmentById(id) == null)
+            fm
+                .beginTransaction()
+                .add(id, MenuFragment())
                 .commit()
     }
 }

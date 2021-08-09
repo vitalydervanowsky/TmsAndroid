@@ -12,7 +12,7 @@ class Dz20Fragment : Fragment() {
     private var _binding: FragmentDz20Binding? = null
     private val binding get() = _binding!!
 
-    private val timer by lazy {
+    private val viewModel by lazy {
         ViewModelProvider(this).get(TimerViewModel::class.java)
     }
 
@@ -32,18 +32,40 @@ class Dz20Fragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         setTvSeconds()
-        binding.bStart.setOnClickListener {
-            val mSeconds = if (binding.eStartSeconds.text.toString() != "")
-                binding.eStartSeconds.text.toString().toLong() * 1000
-            else
-                0
-            timer.startTimer(mSeconds)
-            setTvSeconds()
+        binding.apply {
+            bStart.setOnClickListener {
+                bStart.isEnabled = false
+                eStartSeconds.isEnabled = false
+                val mSeconds = if (eStartSeconds.text.toString() != "")
+                    eStartSeconds.text.toString().toLong() * 1000
+                else
+                    0
+                viewModel.startTimer(mSeconds)
+                setTvSeconds()
+            }
         }
+        listenCount()
     }
 
+    private fun listenCount() {
+        viewModel.isFinishLiveData.observe(viewLifecycleOwner, {
+            if (it) {
+                binding.bStart.isEnabled = true
+                binding.eStartSeconds.isEnabled = true
+                binding.tvSeconds.text = "done!"
+            }
+        })
+        viewModel.isStartedLiveData.observe(viewLifecycleOwner, {
+            if (it) {
+                binding.bStart.isEnabled = false
+                binding.eStartSeconds.isEnabled = false
+            }
+        })
+    }
+
+
     private fun setTvSeconds() {
-        timer.liveData.observe(viewLifecycleOwner, {
+        viewModel.stringLiveData.observe(viewLifecycleOwner, {
             binding.tvSeconds.text = it
         })
     }
