@@ -67,4 +67,5 @@
     <string name="grodno">Гродно</string>
     <string name="mogilev">Могилев</string>
     <string name="minsk">Минск</string>
+    <string name="done_text">done!</string>
 </resources>

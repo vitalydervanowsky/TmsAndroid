@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
+import com.example.tmsandroid.R
 import com.example.tmsandroid.databinding.FragmentDz20Binding
 
 class Dz20Fragment : Fragment() {
@@ -13,12 +14,9 @@ class Dz20Fragment : Fragment() {
     private val binding get() = _binding!!
 
     private val viewModel by lazy {
-        ViewModelProvider(this).get(TimerViewModel::class.java)
+        ViewModelProvider(this)[TimerViewModel::class.java]
     }
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
+    private val doneText = getString(R.string.done_text)
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -52,7 +50,7 @@ class Dz20Fragment : Fragment() {
             if (it) {
                 binding.bStart.isEnabled = true
                 binding.eStartSeconds.isEnabled = true
-                binding.tvSeconds.text = "done!"
+                binding.tvSeconds.text = doneText
             }
         })
         viewModel.isStartedLiveData.observe(viewLifecycleOwner, {
