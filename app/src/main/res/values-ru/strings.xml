@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">TmsAndroid (ru)</string>
+    <string name="dz14">дз14</string>
+    <string name="dz15">дз15</string>
+    <string name="dz16">дз16</string>
+    <string name="dz17">дз17</string>
+    <string name="dz18">дз18</string>
+    <string name="dz19">дз19</string>
+    <string name="dz20">дз20</string>
+    <string name="dz21">дз21</string>
+    <string name="task1">Задание 1</string>
+    <string name="task2">Задание 2</string>
+    <string name="task3">Задание 3</string>
+    <string name="task4">Задание 4</string>
+    <string name="task5">Задание 5</string>
+    <string name="task6">Задание 6</string>
+    <string name="task7">Задание 7</string>
+    <string name="enter_your_question">Введите ваш вопрос</string>
+    <string name="show_answer">Ответ</string>
+    <string name="next_puzzle">Еще загадка</string>
+    <string name="default_string">…</string>
+    <string name="check">Проверить</string>
+    <string name="your_answer">Ваш ответ</string>
+    <string name="equals">=</string>
+    <string name="zero">0</string>
+    <string name="plus">+</string>
+    <string name="random">Случайное число</string>
+    <string name="random_number">Случайное число</string>
+    <string name="result">Результат</string>
+    <string name="sum">Сумма</string>
+    <string name="enter_number">Введите число</string>
+    <string name="creation_of_a_cat">Параметры кота</string>
+    <string name="creation_of_a_table">Параметры стола</string>
+    <string name="name">Имя</string>
+    <string name="weight">Вес</string>
+    <string name="height">Высота</string>
+    <string name="color">Цвет</string>
+    <string name="length">Длина</string>
+    <string name="strength">Сила =</string>
+    <string name="material">Материал</string>
+    <string name="legs">Ножек</string>
+    <string name="jump">Прыгнуть</string>
+    <string name="result_of_jumping">Результат прыжка</string>
+    <string name="jump_is_ok">Кот запрыгнул!</string>
+    <string name="jump_is_not_ok">Кот не смог запрыгнуть</string>
+    <string name="a">a =</string>
+    <string name="b">b =</string>
+    <string name="c">с =</string>
+    <string name="run">Пуск</string>
+    <string name="rate">Оценить</string>
+    <string name="enter_rating">Введите рейтинг</string>
+    <string name="letter1">1-е письмо</string>
+    <string name="x">x =</string>
+    <string name="y">y =</string>
+    <string name="letter2">2-е письмо</string>
+    <string name="letter1_contain_letter2">1-е письмо сможет вместить 2-е письмо</string>
+    <string name="letter2_contain_letter1">2-е письмо сможет вместить 1-е письмо</string>
+    <string name="impossible">Невозможно</string>
+    <string name="factorial">Факториал</string>
+    <string name="number">Число</string>
+    <string name="toBinary">toBinary()</string>
+    <string name="start">Старт</string>
+    <string name="stop">Стоп</string>
+    <string name="reset">Сброс</string>
+    <string name="time_in_seconds">Секунды</string>
+    <string name="seconds_remaining">"Осталось: "</string>
+    <string name="done">Конец!</string>
+    <string name="brest">Брест</string>
+    <string name="vitebsk">Витебск</string>
+    <string name="gomel">Гомель</string>
+    <string name="grodno">Гродно</string>
+    <string name="mogilev">Могилев</string>
+    <string name="minsk">Минск</string>
+    <string name="sum_1_100">"Сумма от 1 до 100 = "</string>
+    <string name="sum_of_even_1_99">Сумма четных от 1 до 99 =</string>
+</resources>
