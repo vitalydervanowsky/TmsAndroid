@@ -5,15 +5,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.tmsandroid.R
 import com.example.tmsandroid.databinding.FragmentDz16Task4Binding
 
 class Dz16Task4Fragment : Fragment() {
     private var _binding: FragmentDz16Task4Binding? = null
     private val binding get() = _binding!!
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -39,9 +36,9 @@ class Dz16Task4Fragment : Fragment() {
                 val cond1 = (x1 > x2 && y1 > y2) || (x1 > y2 && y1 > x2)
                 val cond2 = (x2 > x1 && y2 > y1) || (x2 > y1 && y2 > x1)
                 val result = when {
-                    cond1 -> "1st letter can contain 2nd letter"
-                    cond2 -> "2st letter can contain 1nd letter"
-                    else -> "impossible"
+                    cond1 -> getString(R.string.letter1_contain_letter2)
+                    cond2 -> getString(R.string.letter2_contain_letter1)
+                    else -> getString(R.string.impossible)
                 }
 
                 tvTask4Result.text = result

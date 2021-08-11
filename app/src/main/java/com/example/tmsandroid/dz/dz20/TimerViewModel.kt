@@ -8,7 +8,7 @@ import kotlinx.coroutines.launch
 
 class TimerViewModel : ViewModel() {
 
-    val stringLiveData = MutableLiveData<String>()
+    val secondsLiveData = MutableLiveData<Long>()
     val isFinishLiveData = MutableLiveData<Boolean>()
     val isStartedLiveData = MutableLiveData<Boolean>()
 
@@ -16,8 +16,7 @@ class TimerViewModel : ViewModel() {
         viewModelScope.launch {
             object : CountDownTimer(mSeconds, 1000) {
                 override fun onTick(millisUntilFinished: Long) {
-                    val s = "seconds remaining: " + millisUntilFinished / 1000
-                    stringLiveData.value = s
+                    secondsLiveData.value = millisUntilFinished / 1000
                     isStartedLiveData.value = true
                 }
 

@@ -47,10 +47,6 @@ class Dz14Task2Fragment : Fragment() {
     private val size = puzzles.size - 1
     private var number = (0..size).random()
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

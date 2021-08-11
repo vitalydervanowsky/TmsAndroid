@@ -1,35 +1,27 @@
-package com.example.tmsandroid.dz.dz15
+package com.example.tmsandroid.dz.dz21
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.tmsandroid.R
-import com.example.tmsandroid.databinding.FragmentDz15Task3Binding
+import com.example.tmsandroid.databinding.FragmentDz21Binding
 
-class Dz15Task3Fragment : Fragment() {
-    private var _binding: FragmentDz15Task3Binding? = null
+class Dz21Fragment : Fragment() {
+    private var _binding: FragmentDz21Binding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentDz15Task3Binding.inflate(inflater, container, false)
+        _binding = FragmentDz21Binding.inflate(inflater, container, false)
         return binding.root
     }
-
-    // Посчитайте сумму всех чисел от 1 до 100
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        var result = 0
-        for (i in 1..100)
-            result += i
-        val text = getString(R.string.sum_1_100) + "\n$result"
-        binding.tvResultTask3.text = text
     }
 
     override fun onDestroyView() {

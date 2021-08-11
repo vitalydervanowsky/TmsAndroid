@@ -13,14 +13,11 @@ import com.example.tmsandroid.dz.dz17.Dz17Fragment
 import com.example.tmsandroid.dz.dz18.Dz18Fragment
 import com.example.tmsandroid.dz.dz19.Dz19Fragment
 import com.example.tmsandroid.dz.dz20.Dz20Fragment
+import com.example.tmsandroid.dz.dz21.Dz21Fragment
 
 class MenuFragment : Fragment() {
     private var _binding: FragmentMenuBinding? = null
     private val binding get() = _binding!!
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -79,6 +76,13 @@ class MenuFragment : Fragment() {
             parentFragmentManager.beginTransaction()
                 .addToBackStack(null)
                 .replace(R.id.container, Dz20Fragment())
+                .commit()
+        }
+
+        binding.bDz21.setOnClickListener {
+            parentFragmentManager.beginTransaction()
+                .addToBackStack(null)
+                .replace(R.id.container, Dz21Fragment())
                 .commit()
         }
     }
