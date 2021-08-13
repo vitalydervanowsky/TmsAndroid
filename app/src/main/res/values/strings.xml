@@ -73,4 +73,11 @@
     <string name="minsk">Minsk</string>
     <string name="sum_1_100">"Sum from 1 to 100 = "</string>
     <string name="sum_of_even_1_99">Sum of even from 1 to 99 =</string>
+    <string name="email">Email</string>
+    <string name="gmail_suffix">"@gmail.com"</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="email_password_error">Incorrect inputted data</string>
+    <string name="email_helper_text">Input your email</string>
+    <string name="password_helper_text">Input your password</string>
 </resources>

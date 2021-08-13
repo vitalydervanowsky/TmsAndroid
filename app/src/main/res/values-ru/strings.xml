@@ -73,4 +73,11 @@
     <string name="minsk">Минск</string>
     <string name="sum_1_100">"Сумма от 1 до 100 = "</string>
     <string name="sum_of_even_1_99">Сумма четных от 1 до 99 =</string>
+    <string name="email">Email</string>
+    <string name="gmail_suffix">"@gmail.com"</string>
+    <string name="password">Пароль</string>
+    <string name="login">Войти</string>
+    <string name="email_password_error">Введены неверные данные</string>
+    <string name="email_helper_text">Введите Ваш email</string>
+    <string name="password_helper_text">Введите Ваш пароль</string>
 </resources>
