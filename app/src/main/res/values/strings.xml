@@ -81,4 +81,6 @@
     <string name="email_password_error">Incorrect inputted data</string>
     <string name="email_helper_text">Input your email</string>
     <string name="password_helper_text">Input your password</string>
+    <string name="day_theme">Day theme</string>
+    <string name="night_theme">Night theme</string>
 </resources>

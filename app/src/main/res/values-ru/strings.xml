@@ -81,4 +81,6 @@
     <string name="email_password_error">Введены неверные данные</string>
     <string name="email_helper_text">Введите Ваш email</string>
     <string name="password_helper_text">Введите Ваш пароль</string>
+    <string name="day_theme">Дневная тема</string>
+    <string name="night_theme">Ночная тема</string>
 </resources>
