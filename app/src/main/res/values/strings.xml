@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TmsAndroid</string>
+    <string name="app_name">Tms Android</string>
     <string name="dz14">dz14</string>
     <string name="dz15">dz15</string>
     <string name="dz16">dz16</string>
@@ -8,6 +8,7 @@
     <string name="dz19">dz19</string>
     <string name="dz20">dz20</string>
     <string name="dz21">dz21</string>
+    <string name="dz22">dz22</string>
     <string name="task1">Task1</string>
     <string name="task2">Task2</string>
     <string name="task3">Task3</string>
