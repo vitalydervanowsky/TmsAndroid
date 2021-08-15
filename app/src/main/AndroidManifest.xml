@@ -18,6 +18,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <service
+            android:name=".dz.dz21.MyMediaPlayer"
+            android:icon="@drawable/ic_media_player"
+            android:label="@string/my_media_player" />
     </application>
 
 </manifest>

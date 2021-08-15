@@ -83,4 +83,6 @@
     <string name="password_helper_text">Input your password</string>
     <string name="day_theme">Day theme</string>
     <string name="night_theme">Night theme</string>
+    <string name="my_media_player">MyMediaPlayer</string>
+    <string name="play">Play</string>
 </resources>
