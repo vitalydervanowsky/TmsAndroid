@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="number"
-        android:hint="@string/enter_number_text"
+        android:hint="@string/enter_number"
         app:layout_constraintBottom_toBottomOf="@+id/btn_sum_task2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -23,7 +23,7 @@
         android:id="@+id/btn_sum_task2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/btn_sum_text"
+        android:text="@string/sum"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -32,7 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
-        android:text="@string/tv_result_text"
+        android:text="@string/result"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

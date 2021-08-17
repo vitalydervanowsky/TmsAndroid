@@ -67,7 +67,7 @@
         android:id="@+id/button_check_answer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/check_answer"
+        android:text="@string/check"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/edit_PuzzleAnswer"

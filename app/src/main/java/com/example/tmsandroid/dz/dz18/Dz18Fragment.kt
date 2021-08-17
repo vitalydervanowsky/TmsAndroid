@@ -20,10 +20,6 @@ class Dz18Fragment : Fragment() {
     private lateinit var regions: Array<String>
     private lateinit var regionsView: Array<Array<TextView>>
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

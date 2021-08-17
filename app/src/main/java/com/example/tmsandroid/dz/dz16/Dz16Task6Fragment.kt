@@ -12,10 +12,6 @@ class Dz16Task6Fragment : Fragment() {
     private var _binding: FragmentDz16Task6Binding? = null
     private val binding get() = _binding!!
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

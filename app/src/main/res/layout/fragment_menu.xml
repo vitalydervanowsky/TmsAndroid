@@ -71,6 +71,20 @@
             android:layout_margin="6dp"
             android:text="@string/dz20" />
 
+        <Button
+            android:id="@+id/b_dz21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:text="@string/dz21" />
+
+        <Button
+            android:id="@+id/b_dz22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:text="@string/dz22" />
+
     </LinearLayout>
 
 </LinearLayout>

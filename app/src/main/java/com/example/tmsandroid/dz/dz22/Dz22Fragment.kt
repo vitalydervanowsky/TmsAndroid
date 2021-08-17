@@ -1,35 +1,36 @@
-package com.example.tmsandroid.dz.dz16
+package com.example.tmsandroid.dz.dz22
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.tmsandroid.databinding.FragmentDz16Task1Binding
+import androidx.appcompat.app.AppCompatDelegate
+import com.example.tmsandroid.databinding.FragmentDz22Binding
 
-class Dz16Task1Fragment : Fragment() {
-    private var _binding: FragmentDz16Task1Binding? = null
+class Dz22Fragment : Fragment() {
+    private var _binding: FragmentDz22Binding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentDz16Task1Binding.inflate(inflater, container, false)
+        _binding = FragmentDz22Binding.inflate(inflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.bTask1Run.setOnClickListener {
-            val a = binding.eTask1A.text.toString().toInt()
-            val b = binding.eTask1B.text.toString().toInt()
-            val result = when (a % 2) {
-                0 -> a * b
-                else -> a + b
+        binding.apply {
+            bThemeLight.setOnClickListener {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
             }
-            binding.tvTask1Result.text = result.toString()
+
+            bThemeDark.setOnClickListener {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+            }
         }
     }
 

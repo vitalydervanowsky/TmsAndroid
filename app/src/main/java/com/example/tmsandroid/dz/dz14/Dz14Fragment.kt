@@ -12,10 +12,6 @@ class Dz14Fragment : Fragment() {
     private var _binding: FragmentDz14Binding? = null
     private val binding get() = _binding!!
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -48,7 +44,6 @@ class Dz14Fragment : Fragment() {
                     .replace(R.id.container, Dz14Task3Fragment())
                     .commit()
             }
-
         }
     }
 

@@ -5,20 +5,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
-import com.example.tmsandroid.R
-import com.example.tmsandroid.databinding.FragmentDz16Task1Binding
 import com.example.tmsandroid.databinding.FragmentDz16Task7Binding
 
 class Dz16Task7Fragment : Fragment() {
     private var _binding: FragmentDz16Task7Binding? = null
     private val binding get() = _binding!!
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

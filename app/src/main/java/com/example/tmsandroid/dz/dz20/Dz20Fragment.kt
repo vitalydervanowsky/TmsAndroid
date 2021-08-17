@@ -16,7 +16,6 @@ class Dz20Fragment : Fragment() {
     private val viewModel by lazy {
         ViewModelProvider(this)[TimerViewModel::class.java]
     }
-    private val doneText = getString(R.string.done_text)
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -50,7 +49,7 @@ class Dz20Fragment : Fragment() {
             if (it) {
                 binding.bStart.isEnabled = true
                 binding.eStartSeconds.isEnabled = true
-                binding.tvSeconds.text = doneText
+                binding.tvSeconds.text = getString(R.string.done)
             }
         })
         viewModel.isStartedLiveData.observe(viewLifecycleOwner, {
@@ -61,10 +60,10 @@ class Dz20Fragment : Fragment() {
         })
     }
 
-
     private fun setTvSeconds() {
-        viewModel.stringLiveData.observe(viewLifecycleOwner, {
-            binding.tvSeconds.text = it
+        viewModel.secondsLiveData.observe(viewLifecycleOwner, {
+            val text = getString(R.string.seconds_remaining) + it
+            binding.tvSeconds.text = text
         })
     }
 

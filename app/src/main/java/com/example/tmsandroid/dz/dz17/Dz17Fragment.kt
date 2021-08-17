@@ -6,15 +6,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.tmsandroid.R
 import com.example.tmsandroid.databinding.FragmentDz17Binding
 
 class Dz17Fragment : Fragment() {
     private var _binding: FragmentDz17Binding? = null
     private val binding get() = _binding!!
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -44,13 +41,13 @@ class Dz17Fragment : Fragment() {
             0
         object : CountDownTimer(mSeconds, 1000) {
             override fun onTick(millisUntilFinished: Long) {
-                val s = "seconds remaining: " + millisUntilFinished / 1000
-                binding.tvSeconds.text = s
+                val text = getString(R.string.seconds_remaining) + millisUntilFinished / 1000
+                binding.tvSeconds.text = text
             }
 
             override fun onFinish() {
-                val s = "done!"
-                binding.tvSeconds.text = s
+                val text = getString(R.string.done)
+                binding.tvSeconds.text = text
             }
         }.start()
     }

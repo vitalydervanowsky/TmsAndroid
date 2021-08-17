@@ -47,10 +47,6 @@ class Dz14Task3Fragment : Fragment() {
         'я' to 33
     )
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -79,7 +75,6 @@ class Dz14Task3Fragment : Fragment() {
         for (char in chars) {
             result += abc[char]!!
         }
-
         binding.tvResultTask3.text = result.toString()
     }
 }

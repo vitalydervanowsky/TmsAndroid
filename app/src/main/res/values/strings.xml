@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TmsAndroid</string>
+    <string name="app_name">Tms Android</string>
     <string name="dz14">dz14</string>
     <string name="dz15">dz15</string>
     <string name="dz16">dz16</string>
@@ -7,7 +7,8 @@
     <string name="dz18">dz18</string>
     <string name="dz19">dz19</string>
     <string name="dz20">dz20</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dz21">dz21</string>
+    <string name="dz22">dz22</string>
     <string name="task1">Task1</string>
     <string name="task2">Task2</string>
     <string name="task3">Task3</string>
@@ -15,24 +16,22 @@
     <string name="task5">Task5</string>
     <string name="task6">Task6</string>
     <string name="task7">Task7</string>
-    <string name="edit_ask_question_default">Введите свой вопрос</string>
-    <string name="button">Answer</string>
+    <string name="enter_your_question">Enter your question</string>
     <string name="show_answer">Show answer</string>
     <string name="next_puzzle">Next Puzzle</string>
     <string name="default_string">…</string>
-    <string name="check_answer">Check</string>
+    <string name="check">Check</string>
     <string name="your_answer">Your answer</string>
     <string name="equals">=</string>
     <string name="zero">0</string>
     <string name="plus">+</string>
-    <string name="btn_random_text">Random</string>
-    <string name="tv_random_text">Random number</string>
-    <string name="tv_result_text">Result</string>
-    <string name="btn_check_text">Check</string>
-    <string name="btn_sum_text">Sum</string>
-    <string name="enter_number_text">Enter number</string>
-    <string name="creation_of_a_cat_text">Creation of a cat</string>
-    <string name="creation_of_a_table_text">Creation of a table</string>
+    <string name="random">Random</string>
+    <string name="random_number">Random number</string>
+    <string name="result">Result</string>
+    <string name="sum">Sum</string>
+    <string name="enter_number">Enter number</string>
+    <string name="creation_of_a_cat">Creation of a cat</string>
+    <string name="creation_of_a_table">Creation of a table</string>
     <string name="name">Name</string>
     <string name="weight">Weight</string>
     <string name="height">Height</string>
@@ -41,31 +40,53 @@
     <string name="strength">Strength =</string>
     <string name="material">Material</string>
     <string name="legs">Legs</string>
-    <string name="try_jump">Jump</string>
+    <string name="jump">Jump</string>
     <string name="result_of_jumping">Result of jumping</string>
+    <string name="jump_is_ok">Jump is OK</string>
+    <string name="jump_is_not_ok">Jump is not OK</string>
     <string name="a">a =</string>
     <string name="b">b =</string>
-    <string name="run">Run</string>
-    <string name="result">Result</string>
     <string name="c">с =</string>
+    <string name="run">Run</string>
     <string name="rate">Rate</string>
     <string name="enter_rating">Enter rating</string>
-    <string name="_1st_letter">1st letter</string>
+    <string name="letter1">1st letter</string>
     <string name="x">x =</string>
     <string name="y">y =</string>
-    <string name="_2nd_letter">2nd letter</string>
+    <string name="letter2">2nd letter</string>
+    <string name="letter1_contain_letter2">1st letter can contain 2nd letter</string>
+    <string name="letter2_contain_letter1">2st letter can contain 1nd letter</string>
+    <string name="impossible">Impossible</string>
     <string name="factorial">Factorial</string>
     <string name="number">Number</string>
     <string name="toBinary">toBinary()</string>
     <string name="start">Start</string>
     <string name="stop">Stop</string>
     <string name="reset">Reset</string>
-    <string name="time_in_seconds">time in seconds</string>
-    <string name="brest">Брест</string>
-    <string name="vitebsk">Витебск</string>
-    <string name="gomel">Гомель</string>
-    <string name="grodno">Гродно</string>
-    <string name="mogilev">Могилев</string>
-    <string name="minsk">Минск</string>
-    <string name="done_text">done!</string>
+    <string name="time_in_seconds">Time in seconds</string>
+    <string name="seconds_remaining">"Seconds remaining: "</string>
+    <string name="done">Done!</string>
+    <string name="brest">Brest</string>
+    <string name="vitebsk">Vitebsk</string>
+    <string name="gomel">Gomel</string>
+    <string name="grodno">Grodno</string>
+    <string name="mogilev">Mogilev</string>
+    <string name="minsk">Minsk</string>
+    <string name="sum_1_100">"Sum from 1 to 100 = "</string>
+    <string name="sum_of_even_1_99">Sum of even from 1 to 99 =</string>
+    <string name="email">Email</string>
+    <string name="gmail_suffix">"@gmail.com"</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="login_fragment">Open Login Fragment</string>
+    <string name="logging_in">Logging in…</string>
+    <string name="email_password_error">Incorrect inputted data</string>
+    <string name="email_helper_text">Input your email</string>
+    <string name="password_helper_text">Input your password</string>
+    <string name="day_theme">Day theme</string>
+    <string name="night_theme">Night theme</string>
+    <string name="my_media_player">MyMediaPlayer</string>
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="stop_service">Stop Service</string>
 </resources>

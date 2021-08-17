@@ -7,15 +7,10 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.tmsandroid.R
 import com.example.tmsandroid.databinding.FragmentDz19Binding
-import com.example.tmsandroid.dz.dz19.*
 
 class Dz19Fragment : Fragment() {
     private var _binding: FragmentDz19Binding? = null
     private val binding get() = _binding!!
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -24,7 +19,6 @@ class Dz19Fragment : Fragment() {
         _binding = FragmentDz19Binding.inflate(inflater, container, false)
         return binding.root
     }
-
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)

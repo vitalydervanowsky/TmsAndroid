@@ -10,7 +10,7 @@
         android:id="@+id/tv_cat_creation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/creation_of_a_cat_text"
+        android:text="@string/creation_of_a_cat"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -86,7 +86,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="@string/creation_of_a_table_text"
+        android:text="@string/creation_of_a_table"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -153,7 +153,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
         android:layout_marginTop="16dp"
-        android:text="@string/try_jump"
+        android:text="@string/jump"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/e_table_legs" />
 

@@ -5,15 +5,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.tmsandroid.R
 import com.example.tmsandroid.databinding.FragmentDz15Task4Binding
 
 class Dz15Task4Fragment : Fragment() {
     private var _binding: FragmentDz15Task4Binding? = null
     private val binding get() = _binding!!
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -66,9 +63,9 @@ class Dz15Task4Fragment : Fragment() {
     private fun jump(cat: Cat, table: Table) {
         val tableCharacteristic = table.legs * table.length / table.height / 5
         val result = if (cat.strength > tableCharacteristic)
-            "jump is ok"
+            getString(R.string.jump_is_ok)
         else
-            "jump is not ok"
+            getString(R.string.jump_is_not_ok)
         binding.tvResultTask4.text = result
     }
 }

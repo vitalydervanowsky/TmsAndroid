@@ -5,15 +5,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.tmsandroid.R
 import com.example.tmsandroid.databinding.FragmentDz16Task5Binding
 
 class Dz16Task5Fragment : Fragment() {
     private var _binding: FragmentDz16Task5Binding? = null
     private val binding get() = _binding!!
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -32,7 +29,7 @@ class Dz16Task5Fragment : Fragment() {
         for (i in 2..99 step 2)
             sum += i
 
-        val text = "сумма четных от 1 до 99 =\n$sum"
+        val text = getString(R.string.sum_of_even_1_99) + "\n$sum"
         binding.tvTask5Result.text = text
     }
 
