@@ -78,6 +78,8 @@
     <string name="gmail_suffix">"@gmail.com"</string>
     <string name="password">Пароль</string>
     <string name="login">Войти</string>
+    <string name="login_fragment">Войти в систему</string>
+    <string name="logging_in">Вход в систему…</string>
     <string name="email_password_error">Введены неверные данные</string>
     <string name="email_helper_text">Введите Ваш email</string>
     <string name="password_helper_text">Введите Ваш пароль</string>
@@ -85,4 +87,6 @@
     <string name="night_theme">Ночная тема</string>
     <string name="my_media_player">MyMediaPlayer</string>
     <string name="play">Плэй</string>
+    <string name="pause">Пауза</string>
+    <string name="stop_service">Остановить сервис</string>
 </resources>

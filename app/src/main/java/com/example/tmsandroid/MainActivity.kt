@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         if (fm.findFragmentById(id) == null)
             fm
                 .beginTransaction()
-                .add(id, LoginFragment())
+                .add(id, MenuFragment())
                 .commit()
     }
 }

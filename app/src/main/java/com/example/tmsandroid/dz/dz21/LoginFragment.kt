@@ -1,11 +1,13 @@
-package com.example.tmsandroid
+package com.example.tmsandroid.dz.dz21
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.core.widget.doOnTextChanged
+import com.example.tmsandroid.R
 import com.example.tmsandroid.databinding.FragmentLoginBinding
 
 class LoginFragment : Fragment() {
@@ -49,9 +51,7 @@ class LoginFragment : Fragment() {
     }
 
     private fun openMenu() {
-        parentFragmentManager.beginTransaction()
-            .replace(R.id.container, MenuFragment())
-            .commit()
+        Toast.makeText(context, getString(R.string.logging_in), Toast.LENGTH_SHORT).show()
     }
 
     private fun showError() {
