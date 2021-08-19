@@ -15,6 +15,7 @@ import com.example.tmsandroid.dz.dz19.Dz19Fragment
 import com.example.tmsandroid.dz.dz20.Dz20Fragment
 import com.example.tmsandroid.dz.dz21.Dz21Fragment
 import com.example.tmsandroid.dz.dz22.Dz22Fragment
+import com.example.tmsandroid.dz.dz22.Dz24Fragment
 
 class MenuFragment : Fragment() {
     private var _binding: FragmentMenuBinding? = null
@@ -92,6 +93,13 @@ class MenuFragment : Fragment() {
                 parentFragmentManager.beginTransaction()
                     .addToBackStack(null)
                     .replace(R.id.container, Dz22Fragment())
+                    .commit()
+            }
+
+            bDz24.setOnClickListener {
+                parentFragmentManager.beginTransaction()
+                    .addToBackStack(null)
+                    .replace(R.id.container, Dz24Fragment())
                     .commit()
             }
         }
