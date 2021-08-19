@@ -15,6 +15,10 @@ class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
     fun bind(car: Car) {
         name.text = car.name
         country.text = car.country
-        Glide.with(itemView).load(car.logo).into(logo)
+        Glide.with(itemView)
+            .load(car.logo)
+            .placeholder(R.drawable.img_placeholder_300_300)
+            .error(R.drawable.img_placeholder_300_300)
+            .into(logo)
     }
 }
