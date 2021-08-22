@@ -14,8 +14,8 @@ class Dz23Fragment : Fragment() {
     private var _binding: FragmentDz23Binding? = null
     private val binding get() = _binding!!
 
-    private val carsViewModel by lazy {
-        ViewModelProvider(this)[CarsViewModel::class.java]
+    private val carViewModel by lazy {
+        ViewModelProvider(this)[CarViewModel::class.java]
     }
 
     override fun onCreateView(
@@ -30,8 +30,8 @@ class Dz23Fragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val rvList = getView()?.findViewById<RecyclerView>(R.id.rv_list)
-        carsViewModel.setup()
-        carsViewModel.carsLiveData.observe(viewLifecycleOwner, {
+        carViewModel.setup()
+        carViewModel.carsLiveData.observe(viewLifecycleOwner, {
             rvList?.adapter = CarAdapter(it)
         })
     }

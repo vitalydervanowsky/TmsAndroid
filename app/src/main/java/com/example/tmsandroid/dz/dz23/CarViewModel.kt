@@ -3,9 +3,9 @@ package com.example.tmsandroid.dz.dz23
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class CarsViewModel: ViewModel() {
+class CarViewModel: ViewModel() {
 
-    val cars = MutableLiveData<List<Car>>()
+    val carsLiveData = MutableLiveData<List<Car>>()
     private val data = listOf(
         Car("BMW", "Germany", "https://www.carlogos.org/car-logos/bmw-logo-1997-1200x1200.png"),
         Car("Opel", "Germany", "https://www.carlogos.org/logo/Opel-logo-2009-1920x1080.png"),
@@ -20,6 +20,6 @@ class CarsViewModel: ViewModel() {
     )
 
     fun setup() {
-        cars.value = data
+        carsLiveData.value = data
     }
 }
