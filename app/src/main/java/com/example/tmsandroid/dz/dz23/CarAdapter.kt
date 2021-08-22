@@ -3,15 +3,15 @@ package com.example.tmsandroid.dz.dz23
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.tmsandroid.R
+import com.example.tmsandroid.databinding.ItemCarBinding
 
-class CarAdapter(private val data: List<Car>): RecyclerView.Adapter<ViewHolder>() {
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_car, parent, false)
-        return ViewHolder(view)
+class CarAdapter(private val data: List<Car>): RecyclerView.Adapter<CarViewHolder>() {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CarViewHolder {
+        val binding = ItemCarBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        return CarViewHolder(binding)
     }
 
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: CarViewHolder, position: Int) {
         holder.bind(data[position])
     }
 
