@@ -6,8 +6,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import androidx.recyclerview.widget.RecyclerView
-import com.example.tmsandroid.R
 import com.example.tmsandroid.databinding.FragmentDz23Binding
 
 class Dz23Fragment : Fragment() {
@@ -29,10 +27,9 @@ class Dz23Fragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val rvList = getView()?.findViewById<RecyclerView>(R.id.rv_list)
         carViewModel.setup()
         carViewModel.carsLiveData.observe(viewLifecycleOwner, {
-            rvList?.adapter = CarAdapter(it)
+            binding.rvList.adapter = CarAdapter(it)
         })
     }
 

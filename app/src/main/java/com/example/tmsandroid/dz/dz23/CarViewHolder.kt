@@ -8,12 +8,14 @@ import com.example.tmsandroid.databinding.ItemCarBinding
 class CarViewHolder(val binding: ItemCarBinding): RecyclerView.ViewHolder(binding.root) {
 
     fun bind(car: Car) {
-        binding.tvName.text = car.name
-        binding.tvCountry.text = car.country
-        Glide.with(itemView)
-            .load(car.logo)
-            .placeholder(R.drawable.img_placeholder_300_300)
-            .error(R.drawable.img_placeholder_300_300)
-            .into(binding.ivLogo)
+        binding.apply {
+            tvName.text = car.name
+            tvCountry.text = car.country
+            Glide.with(itemView)
+                .load(car.logo)
+                .placeholder(R.drawable.img_placeholder_300_300)
+                .error(R.drawable.img_placeholder_300_300)
+                .into(ivLogo)
+        }
     }
 }
