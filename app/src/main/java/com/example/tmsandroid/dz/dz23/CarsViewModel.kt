@@ -5,7 +5,7 @@ import androidx.lifecycle.ViewModel
 
 class CarsViewModel: ViewModel() {
 
-    val carsLiveData = MutableLiveData<List<Car>>()
+    val cars = MutableLiveData<List<Car>>()
     private val data = listOf(
         Car("BMW", "Germany", "https://www.carlogos.org/car-logos/bmw-logo-1997-1200x1200.png"),
         Car("Opel", "Germany", "https://www.carlogos.org/logo/Opel-logo-2009-1920x1080.png"),
@@ -20,6 +20,6 @@ class CarsViewModel: ViewModel() {
     )
 
     fun setup() {
-        carsLiveData.value = data
+        cars.value = data
     }
 }
