@@ -3,7 +3,7 @@ package com.example.tmsandroid.dz.dz23
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class CarViewModel: ViewModel() {
+class CarsViewModel: ViewModel() {
 
     val carsLiveData = MutableLiveData<List<Car>>()
     private val data = listOf(
