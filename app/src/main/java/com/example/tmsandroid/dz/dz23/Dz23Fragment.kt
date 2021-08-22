@@ -31,7 +31,7 @@ class Dz23Fragment : Fragment() {
 
         val rvList = getView()?.findViewById<RecyclerView>(R.id.rv_list)
         carViewModel.setup()
-        carViewModel.cars.observe(viewLifecycleOwner, {
+        carViewModel.carsLiveData.observe(viewLifecycleOwner, {
             rvList?.adapter = CarAdapter(it)
         })
     }
