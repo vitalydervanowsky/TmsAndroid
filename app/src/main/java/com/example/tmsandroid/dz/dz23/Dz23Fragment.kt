@@ -6,9 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.example.tmsandroid.R
 import com.example.tmsandroid.databinding.FragmentDz23Binding
 
-class Dz23Fragment : Fragment() {
+class Dz23Fragment : Fragment(), CarViewInterface {
     private var _binding: FragmentDz23Binding? = null
     private val binding get() = _binding!!
 
@@ -29,7 +30,9 @@ class Dz23Fragment : Fragment() {
 
         carViewModel.setup()
         carViewModel.carsLiveData.observe(viewLifecycleOwner, {
-            binding.rvList.adapter = CarAdapter(it)
+            val adapter = CarAdapter(it)
+            adapter.carViewCallback(this)
+            binding.rvList.adapter = adapter
         })
     }
 
@@ -37,4 +40,15 @@ class Dz23Fragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
+
+    override fun onClick(car: Car) {
+        parentFragmentManager.beginTransaction()
+            .addToBackStack(null)
+            .replace(R.id.container, CarDetails(car))
+            .commit()
+    }
+}
+
+interface CarViewInterface {
+    fun onClick(car: Car)
 }
