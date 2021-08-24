@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".dz.dz22.Dz24Fragment">
+    tools:context=".dz.dz24.Dz24Fragment">
 
     <Button
         android:id="@+id/b_start_animation"

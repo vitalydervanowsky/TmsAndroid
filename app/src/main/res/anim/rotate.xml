@@ -7,6 +7,6 @@
         android:fromDegrees="0"
         android:toDegrees="360"
         android:duration="1000"
-        android:repeatCount="2"
-        />
+        android:repeatCount="2" />
+
 </set>
