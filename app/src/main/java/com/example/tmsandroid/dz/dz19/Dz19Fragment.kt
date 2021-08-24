@@ -26,6 +26,12 @@ class Dz19Fragment : Fragment() {
         binding.apply {
             bTask1.setOnClickListener {
                 parentFragmentManager.beginTransaction()
+                    .setCustomAnimations(
+                        R.anim.fade_in,
+                        R.anim.fade_out,
+                        R.anim.fade_in,
+                        R.anim.fade_out
+                    )
                     .addToBackStack(null)
                     .replace(R.id.container, Dz19Task1Fragment())
                     .commit()
@@ -33,6 +39,12 @@ class Dz19Fragment : Fragment() {
 
             bTask2.setOnClickListener {
                 parentFragmentManager.beginTransaction()
+                    .setCustomAnimations(
+                        R.anim.fade_in,
+                        R.anim.fade_out,
+                        R.anim.fade_in,
+                        R.anim.fade_out
+                    )
                     .addToBackStack(null)
                     .replace(R.id.container, Dz19Task2Fragment())
                     .commit()
@@ -40,6 +52,12 @@ class Dz19Fragment : Fragment() {
 
             bTask3.setOnClickListener {
                 parentFragmentManager.beginTransaction()
+                    .setCustomAnimations(
+                        R.anim.fade_in,
+                        R.anim.fade_out,
+                        R.anim.fade_in,
+                        R.anim.fade_out
+                    )
                     .addToBackStack(null)
                     .replace(R.id.container, Dz19Task3Fragment())
                     .commit()
@@ -47,6 +65,12 @@ class Dz19Fragment : Fragment() {
 
             bTask4.setOnClickListener {
                 parentFragmentManager.beginTransaction()
+                    .setCustomAnimations(
+                        R.anim.fade_in,
+                        R.anim.fade_out,
+                        R.anim.fade_in,
+                        R.anim.fade_out
+                    )
                     .addToBackStack(null)
                     .replace(R.id.container, Dz19Task4Fragment())
                     .commit()
@@ -54,6 +78,12 @@ class Dz19Fragment : Fragment() {
 
             bTask5.setOnClickListener {
                 parentFragmentManager.beginTransaction()
+                    .setCustomAnimations(
+                        R.anim.fade_in,
+                        R.anim.fade_out,
+                        R.anim.fade_in,
+                        R.anim.fade_out
+                    )
                     .addToBackStack(null)
                     .replace(R.id.container, Dz19Task5Fragment())
                     .commit()
@@ -61,6 +91,12 @@ class Dz19Fragment : Fragment() {
 
             bTask6.setOnClickListener {
                 parentFragmentManager.beginTransaction()
+                    .setCustomAnimations(
+                        R.anim.fade_in,
+                        R.anim.fade_out,
+                        R.anim.fade_in,
+                        R.anim.fade_out
+                    )
                     .addToBackStack(null)
                     .replace(R.id.container, Dz19Task6Fragment())
                     .commit()
@@ -68,6 +104,12 @@ class Dz19Fragment : Fragment() {
 
             bTask7.setOnClickListener {
                 parentFragmentManager.beginTransaction()
+                    .setCustomAnimations(
+                        R.anim.fade_in,
+                        R.anim.fade_out,
+                        R.anim.fade_in,
+                        R.anim.fade_out
+                    )
                     .addToBackStack(null)
                     .replace(R.id.container, Dz19Task7Fragment())
                     .commit()
