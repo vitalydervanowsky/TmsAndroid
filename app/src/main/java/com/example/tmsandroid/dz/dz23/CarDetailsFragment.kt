@@ -9,7 +9,7 @@ import com.bumptech.glide.Glide
 import com.example.tmsandroid.R
 import com.example.tmsandroid.databinding.CarDetailsBinding
 
-class CarDetails(val car: Car) : Fragment() {
+class CarDetailsFragment(val car: Car) : Fragment() {
     private var _binding: CarDetailsBinding? = null
     private val binding get() = _binding!!
 

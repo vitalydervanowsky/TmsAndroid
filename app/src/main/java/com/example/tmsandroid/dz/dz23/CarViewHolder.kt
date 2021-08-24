@@ -5,7 +5,7 @@ import com.bumptech.glide.Glide
 import com.example.tmsandroid.R
 import com.example.tmsandroid.databinding.ItemCarBinding
 
-class CarViewHolder(val binding: ItemCarBinding): RecyclerView.ViewHolder(binding.root) {
+class CarViewHolder(val binding: ItemCarBinding) : RecyclerView.ViewHolder(binding.root) {
 
     fun bind(car: Car, callback: CarViewInterface?) {
         binding.apply {
@@ -17,7 +17,7 @@ class CarViewHolder(val binding: ItemCarBinding): RecyclerView.ViewHolder(bindin
                 .error(R.drawable.img_placeholder_300_300)
                 .into(ivLogo)
             itemView.setOnClickListener {
-                callback?.onClick(car)
+                callback?.onClickItem(car)
             }
         }
     }

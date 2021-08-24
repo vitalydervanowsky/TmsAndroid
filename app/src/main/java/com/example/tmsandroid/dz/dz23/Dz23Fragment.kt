@@ -41,14 +41,14 @@ class Dz23Fragment : Fragment(), CarViewInterface {
         _binding = null
     }
 
-    override fun onClick(car: Car) {
+    override fun onClickItem(car: Car) {
         parentFragmentManager.beginTransaction()
             .addToBackStack(null)
-            .replace(R.id.container, CarDetails(car))
+            .replace(R.id.container, CarDetailsFragment(car))
             .commit()
     }
 }
 
 interface CarViewInterface {
-    fun onClick(car: Car)
+    fun onClickItem(car: Car)
 }
