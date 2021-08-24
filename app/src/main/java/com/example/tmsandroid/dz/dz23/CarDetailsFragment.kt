@@ -7,17 +7,17 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.bumptech.glide.Glide
 import com.example.tmsandroid.R
-import com.example.tmsandroid.databinding.CarDetailsBinding
+import com.example.tmsandroid.databinding.FragmentCarDetailsBinding
 
 class CarDetailsFragment(val car: Car) : Fragment() {
-    private var _binding: CarDetailsBinding? = null
+    private var _binding: FragmentCarDetailsBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = CarDetailsBinding.inflate(inflater, container, false)
+        _binding = FragmentCarDetailsBinding.inflate(inflater, container, false)
         return binding.root
     }
 
