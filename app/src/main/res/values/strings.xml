@@ -89,4 +89,7 @@
     <string name="play">Play</string>
     <string name="pause">Pause</string>
     <string name="stop_service">Stop Service</string>
+
+    <string name="dz23">dz23</string>
+    <string name="car_logo_description">Car logo</string>
 </resources>
