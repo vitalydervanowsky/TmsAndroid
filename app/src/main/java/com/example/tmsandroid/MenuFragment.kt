@@ -15,6 +15,7 @@ import com.example.tmsandroid.dz.dz19.Dz19Fragment
 import com.example.tmsandroid.dz.dz20.Dz20Fragment
 import com.example.tmsandroid.dz.dz21.Dz21Fragment
 import com.example.tmsandroid.dz.dz22.Dz22Fragment
+import com.example.tmsandroid.dz.dz23.Dz23Fragment
 import com.example.tmsandroid.dz.dz24.Dz24Fragment
 
 class MenuFragment : Fragment() {
@@ -147,6 +148,19 @@ class MenuFragment : Fragment() {
                     )
                     .addToBackStack(null)
                     .replace(R.id.container, Dz22Fragment())
+                    .commit()
+            }
+                    
+            bDz23.setOnClickListener {
+                parentFragmentManager.beginTransaction()
+                    .setCustomAnimations(
+                        R.anim.slide_in_right,
+                        R.anim.fade_out,
+                        R.anim.fade_in,
+                        R.anim.slide_out_right
+                    )
+                    .addToBackStack(null)
+                    .replace(R.id.container, Dz23Fragment())
                     .commit()
             }
 
