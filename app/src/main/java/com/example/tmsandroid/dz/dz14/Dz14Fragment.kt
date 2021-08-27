@@ -26,6 +26,12 @@ class Dz14Fragment : Fragment() {
         binding.apply {
             buttonTask1.setOnClickListener {
                 parentFragmentManager.beginTransaction()
+                    .setCustomAnimations(
+                        R.anim.slide_in_right,
+                        R.anim.slide_out_left,
+                        R.anim.slide_in_left,
+                        R.anim.slide_out_right
+                    )
                     .addToBackStack(null)
                     .replace(R.id.container, Dz14Task1Fragment())
                     .commit()
@@ -33,6 +39,12 @@ class Dz14Fragment : Fragment() {
 
             buttonTask2.setOnClickListener {
                 parentFragmentManager.beginTransaction()
+                    .setCustomAnimations(
+                        R.anim.slide_in_right,
+                        R.anim.slide_out_left,
+                        R.anim.slide_in_left,
+                        R.anim.slide_out_right
+                    )
                     .addToBackStack(null)
                     .replace(R.id.container, Dz14Task2Fragment())
                     .commit()
@@ -40,6 +52,12 @@ class Dz14Fragment : Fragment() {
 
             buttonTask3.setOnClickListener {
                 parentFragmentManager.beginTransaction()
+                    .setCustomAnimations(
+                        R.anim.slide_in_right,
+                        R.anim.slide_out_left,
+                        R.anim.slide_in_left,
+                        R.anim.slide_out_right
+                    )
                     .addToBackStack(null)
                     .replace(R.id.container, Dz14Task3Fragment())
                     .commit()

@@ -26,6 +26,12 @@ class Dz15Fragment : Fragment() {
         binding.apply {
             btnTask1.setOnClickListener {
                 parentFragmentManager.beginTransaction()
+                    .setCustomAnimations(
+                        R.anim.scale_in,
+                        R.anim.scale_out,
+                        R.anim.scale_in,
+                        R.anim.scale_out
+                    )
                     .addToBackStack(null)
                     .replace(R.id.container, Dz15Task1Fragment())
                     .commit()
@@ -33,6 +39,12 @@ class Dz15Fragment : Fragment() {
 
             btnTask2.setOnClickListener {
                 parentFragmentManager.beginTransaction()
+                    .setCustomAnimations(
+                        R.anim.scale_in,
+                        R.anim.scale_out,
+                        R.anim.scale_in,
+                        R.anim.scale_out
+                    )
                     .addToBackStack(null)
                     .replace(R.id.container, Dz15Task2Fragment())
                     .commit()
@@ -40,6 +52,12 @@ class Dz15Fragment : Fragment() {
 
             btnTask3.setOnClickListener {
                 parentFragmentManager.beginTransaction()
+                    .setCustomAnimations(
+                        R.anim.scale_in,
+                        R.anim.scale_out,
+                        R.anim.scale_in,
+                        R.anim.scale_out
+                    )
                     .addToBackStack(null)
                     .replace(R.id.container, Dz15Task3Fragment())
                     .commit()
@@ -47,6 +65,12 @@ class Dz15Fragment : Fragment() {
 
             btnTask4.setOnClickListener {
                 parentFragmentManager.beginTransaction()
+                    .setCustomAnimations(
+                        R.anim.scale_in,
+                        R.anim.scale_out,
+                        R.anim.scale_in,
+                        R.anim.scale_out
+                    )
                     .addToBackStack(null)
                     .replace(R.id.container, Dz15Task4Fragment())
                     .commit()

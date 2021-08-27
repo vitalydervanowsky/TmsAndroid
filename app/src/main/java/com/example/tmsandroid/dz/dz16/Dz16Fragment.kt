@@ -26,6 +26,12 @@ class Dz16Fragment : Fragment() {
         binding.apply {
             bTask1.setOnClickListener {
                 parentFragmentManager.beginTransaction()
+                    .setCustomAnimations(
+                        R.anim.slide_in_bottom,
+                        R.anim.slide_out_top,
+                        R.anim.slide_in_top,
+                        R.anim.slide_out_bottom
+                    )
                     .addToBackStack(null)
                     .replace(R.id.container, Dz16Task1Fragment())
                     .commit()
@@ -33,6 +39,12 @@ class Dz16Fragment : Fragment() {
 
             bTask2.setOnClickListener {
                 parentFragmentManager.beginTransaction()
+                    .setCustomAnimations(
+                        R.anim.slide_in_bottom,
+                        R.anim.slide_out_top,
+                        R.anim.slide_in_top,
+                        R.anim.slide_out_bottom
+                    )
                     .addToBackStack(null)
                     .replace(R.id.container, Dz16Task2Fragment())
                     .commit()
@@ -40,6 +52,12 @@ class Dz16Fragment : Fragment() {
 
             bTask3.setOnClickListener {
                 parentFragmentManager.beginTransaction()
+                    .setCustomAnimations(
+                        R.anim.slide_in_bottom,
+                        R.anim.slide_out_top,
+                        R.anim.slide_in_top,
+                        R.anim.slide_out_bottom
+                    )
                     .addToBackStack(null)
                     .replace(R.id.container, Dz16Task3Fragment())
                     .commit()
@@ -47,6 +65,12 @@ class Dz16Fragment : Fragment() {
 
             bTask4.setOnClickListener {
                 parentFragmentManager.beginTransaction()
+                    .setCustomAnimations(
+                        R.anim.slide_in_bottom,
+                        R.anim.slide_out_top,
+                        R.anim.slide_in_top,
+                        R.anim.slide_out_bottom
+                    )
                     .addToBackStack(null)
                     .replace(R.id.container, Dz16Task4Fragment())
                     .commit()
@@ -54,6 +78,12 @@ class Dz16Fragment : Fragment() {
 
             bTask5.setOnClickListener {
                 parentFragmentManager.beginTransaction()
+                    .setCustomAnimations(
+                        R.anim.slide_in_bottom,
+                        R.anim.slide_out_top,
+                        R.anim.slide_in_top,
+                        R.anim.slide_out_bottom
+                    )
                     .addToBackStack(null)
                     .replace(R.id.container, Dz16Task5Fragment())
                     .commit()
@@ -61,6 +91,12 @@ class Dz16Fragment : Fragment() {
 
             bTask6.setOnClickListener {
                 parentFragmentManager.beginTransaction()
+                    .setCustomAnimations(
+                        R.anim.slide_in_bottom,
+                        R.anim.slide_out_top,
+                        R.anim.slide_in_top,
+                        R.anim.slide_out_bottom
+                    )
                     .addToBackStack(null)
                     .replace(R.id.container, Dz16Task6Fragment())
                     .commit()
@@ -68,6 +104,12 @@ class Dz16Fragment : Fragment() {
 
             bTask7.setOnClickListener {
                 parentFragmentManager.beginTransaction()
+                    .setCustomAnimations(
+                        R.anim.slide_in_bottom,
+                        R.anim.slide_out_top,
+                        R.anim.slide_in_top,
+                        R.anim.slide_out_bottom
+                    )
                     .addToBackStack(null)
                     .replace(R.id.container, Dz16Task7Fragment())
                     .commit()

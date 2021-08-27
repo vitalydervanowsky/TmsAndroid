@@ -89,7 +89,7 @@
     <string name="play">Плэй</string>
     <string name="pause">Пауза</string>
     <string name="stop_service">Остановить сервис</string>
-
+    <string name="dz24">дз24</string>
     <string name="dz23">дз23</string>
     <string name="car_logo_description">Логотип автомобиля</string>
 </resources>

@@ -16,6 +16,7 @@ import com.example.tmsandroid.dz.dz20.Dz20Fragment
 import com.example.tmsandroid.dz.dz21.Dz21Fragment
 import com.example.tmsandroid.dz.dz22.Dz22Fragment
 import com.example.tmsandroid.dz.dz23.Dz23Fragment
+import com.example.tmsandroid.dz.dz24.Dz24Fragment
 
 class MenuFragment : Fragment() {
     private var _binding: FragmentMenuBinding? = null
@@ -35,6 +36,12 @@ class MenuFragment : Fragment() {
         binding.apply {
             bDz14.setOnClickListener {
                 parentFragmentManager.beginTransaction()
+                    .setCustomAnimations(
+                        R.anim.slide_in_right,
+                        R.anim.fade_out,
+                        R.anim.fade_in,
+                        R.anim.slide_out_right
+                    )
                     .addToBackStack(null)
                     .replace(R.id.container, Dz14Fragment())
                     .commit()
@@ -42,6 +49,12 @@ class MenuFragment : Fragment() {
 
             bDz15.setOnClickListener {
                 parentFragmentManager.beginTransaction()
+                    .setCustomAnimations(
+                        R.anim.slide_in_right,
+                        R.anim.fade_out,
+                        R.anim.fade_in,
+                        R.anim.slide_out_right
+                    )
                     .addToBackStack(null)
                     .replace(R.id.container, Dz15Fragment())
                     .commit()
@@ -49,6 +62,12 @@ class MenuFragment : Fragment() {
 
             bDz16.setOnClickListener {
                 parentFragmentManager.beginTransaction()
+                    .setCustomAnimations(
+                        R.anim.slide_in_right,
+                        R.anim.fade_out,
+                        R.anim.fade_in,
+                        R.anim.slide_out_right
+                    )
                     .addToBackStack(null)
                     .replace(R.id.container, Dz16Fragment())
                     .commit()
@@ -56,6 +75,12 @@ class MenuFragment : Fragment() {
 
             bDz17.setOnClickListener {
                 parentFragmentManager.beginTransaction()
+                    .setCustomAnimations(
+                        R.anim.slide_in_right,
+                        R.anim.fade_out,
+                        R.anim.fade_in,
+                        R.anim.slide_out_right
+                    )
                     .addToBackStack(null)
                     .replace(R.id.container, Dz17Fragment())
                     .commit()
@@ -63,6 +88,12 @@ class MenuFragment : Fragment() {
 
             bDz18.setOnClickListener {
                 parentFragmentManager.beginTransaction()
+                    .setCustomAnimations(
+                        R.anim.slide_in_right,
+                        R.anim.fade_out,
+                        R.anim.fade_in,
+                        R.anim.slide_out_right
+                    )
                     .addToBackStack(null)
                     .replace(R.id.container, Dz18Fragment())
                     .commit()
@@ -70,6 +101,12 @@ class MenuFragment : Fragment() {
 
             bDz19.setOnClickListener {
                 parentFragmentManager.beginTransaction()
+                    .setCustomAnimations(
+                        R.anim.slide_in_right,
+                        R.anim.fade_out,
+                        R.anim.fade_in,
+                        R.anim.slide_out_right
+                    )
                     .addToBackStack(null)
                     .replace(R.id.container, Dz19Fragment())
                     .commit()
@@ -77,6 +114,12 @@ class MenuFragment : Fragment() {
 
             bDz20.setOnClickListener {
                 parentFragmentManager.beginTransaction()
+                    .setCustomAnimations(
+                        R.anim.slide_in_right,
+                        R.anim.fade_out,
+                        R.anim.fade_in,
+                        R.anim.slide_out_right
+                    )
                     .addToBackStack(null)
                     .replace(R.id.container, Dz20Fragment())
                     .commit()
@@ -84,6 +127,12 @@ class MenuFragment : Fragment() {
 
             bDz21.setOnClickListener {
                 parentFragmentManager.beginTransaction()
+                    .setCustomAnimations(
+                        R.anim.slide_in_right,
+                        R.anim.fade_out,
+                        R.anim.fade_in,
+                        R.anim.slide_out_right
+                    )
                     .addToBackStack(null)
                     .replace(R.id.container, Dz21Fragment())
                     .commit()
@@ -91,15 +140,40 @@ class MenuFragment : Fragment() {
 
             bDz22.setOnClickListener {
                 parentFragmentManager.beginTransaction()
+                    .setCustomAnimations(
+                        R.anim.slide_in_right,
+                        R.anim.fade_out,
+                        R.anim.fade_in,
+                        R.anim.slide_out_right
+                    )
                     .addToBackStack(null)
                     .replace(R.id.container, Dz22Fragment())
                     .commit()
             }
-
+                    
             bDz23.setOnClickListener {
                 parentFragmentManager.beginTransaction()
+                    .setCustomAnimations(
+                        R.anim.slide_in_right,
+                        R.anim.fade_out,
+                        R.anim.fade_in,
+                        R.anim.slide_out_right
+                    )
                     .addToBackStack(null)
                     .replace(R.id.container, Dz23Fragment())
+                    .commit()
+            }
+
+            bDz24.setOnClickListener {
+                parentFragmentManager.beginTransaction()
+                    .setCustomAnimations(
+                        R.anim.slide_in_right,
+                        R.anim.fade_out,
+                        R.anim.fade_in,
+                        R.anim.slide_out_right
+                    )
+                    .addToBackStack(null)
+                    .replace(R.id.container, Dz24Fragment())
                     .commit()
             }
         }
