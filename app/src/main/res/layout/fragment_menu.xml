@@ -105,6 +105,13 @@
             android:layout_margin="6dp"
             android:text="@string/dz24" />
 
+        <Button
+            android:id="@+id/b_dz25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:text="@string/dz25" />
+
     </LinearLayout>
 
 </LinearLayout>
