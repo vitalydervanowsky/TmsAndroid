@@ -4,17 +4,21 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.ViewModelProviders
 import com.example.tmsandroid.R
 import com.example.tmsandroid.databinding.FragmentDz23Binding
 
-class Dz23Fragment : Fragment(), CarViewInterface {
+class Dz23Fragment : Fragment() {
     private var _binding: FragmentDz23Binding? = null
     private val binding get() = _binding!!
+    private lateinit var carViewModel: CarViewModel
 
-    private val carViewModel by lazy {
-        ViewModelProvider(this)[CarViewModel::class.java]
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        val context = this.context as AppCompatActivity
+        carViewModel = activity.run { ViewModelProviders.of(context)[CarViewModel::class.java] }
     }
 
     override fun onCreateView(
@@ -30,9 +34,13 @@ class Dz23Fragment : Fragment(), CarViewInterface {
 
         carViewModel.setup()
         carViewModel.carsLiveData.observe(viewLifecycleOwner, {
-            val adapter = CarAdapter(it)
-            adapter.carViewCallback(this)
-            binding.rvList.adapter = adapter
+            binding.rvList.adapter = CarAdapter(it) {
+                carViewModel.setCar(it)
+                parentFragmentManager.beginTransaction()
+                    .addToBackStack(null)
+                    .replace(R.id.container, CarDetailsFragment())
+                    .commit()
+            }
         })
     }
 
@@ -40,15 +48,4 @@ class Dz23Fragment : Fragment(), CarViewInterface {
         super.onDestroyView()
         _binding = null
     }
-
-    override fun onClickItem(car: Car) {
-        parentFragmentManager.beginTransaction()
-            .addToBackStack(null)
-            .replace(R.id.container, CarDetailsFragment(car))
-            .commit()
-    }
-}
-
-interface CarViewInterface {
-    fun onClickItem(car: Car)
 }
