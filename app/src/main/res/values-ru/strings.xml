@@ -92,4 +92,10 @@
     <string name="dz24">дз24</string>
     <string name="dz23">дз23</string>
     <string name="car_logo_description">Логотип автомобиля</string>
+    <string name="dz26">дз26</string>
+    <string name="add_word">Добавить слово</string>
+    <string name="hint_word">Слово…</string>
+    <string name="button_save">Сохранить</string>
+    <string name="empty_not_saved">Слово не сохранено, потому что поле пустое</string>
+    <string name="room_example">Room example</string>
 </resources>
