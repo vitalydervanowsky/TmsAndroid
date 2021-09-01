@@ -36,6 +36,11 @@ class Dz26Activity : AppCompatActivity() {
             val intent = Intent(this, NewWordActivity::class.java)
             startActivityForResult(intent, newWordActivityRequestCode)
         }
+
+        binding.bDeleteAll.setOnClickListener {
+            wordViewModel.deleteAll()
+            (binding.recyclerview.adapter as WordListAdapter).notifyDataSetChanged()
+        }
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {

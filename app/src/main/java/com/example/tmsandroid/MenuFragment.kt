@@ -1,5 +1,6 @@
 package com.example.tmsandroid
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -17,7 +18,7 @@ import com.example.tmsandroid.dz.dz21.Dz21Fragment
 import com.example.tmsandroid.dz.dz22.Dz22Fragment
 import com.example.tmsandroid.dz.dz23.Dz23Fragment
 import com.example.tmsandroid.dz.dz24.Dz24Fragment
-import com.example.tmsandroid.dz.dz26.Dz26Fragment
+import com.example.tmsandroid.dz.dz26.Dz26Activity
 
 class MenuFragment : Fragment() {
     private var _binding: FragmentMenuBinding? = null
@@ -151,7 +152,7 @@ class MenuFragment : Fragment() {
                     .replace(R.id.container, Dz22Fragment())
                     .commit()
             }
-                    
+
             bDz23.setOnClickListener {
                 parentFragmentManager.beginTransaction()
                     .setCustomAnimations(
@@ -179,16 +180,8 @@ class MenuFragment : Fragment() {
             }
 
             bDz26.setOnClickListener {
-                parentFragmentManager.beginTransaction()
-                    .setCustomAnimations(
-                        R.anim.slide_in_right,
-                        R.anim.fade_out,
-                        R.anim.fade_in,
-                        R.anim.slide_out_right
-                    )
-                    .addToBackStack(null)
-                    .replace(R.id.container, Dz26Fragment())
-                    .commit()
+                val intent = Intent(context, Dz26Activity::class.java)
+                startActivity(intent)
             }
         }
     }

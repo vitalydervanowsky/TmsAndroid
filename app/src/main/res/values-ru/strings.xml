@@ -98,4 +98,5 @@
     <string name="button_save">Сохранить</string>
     <string name="empty_not_saved">Слово не сохранено, потому что поле пустое</string>
     <string name="room_example">Room example</string>
+    <string name="add">Добавить слово</string>
 </resources>
