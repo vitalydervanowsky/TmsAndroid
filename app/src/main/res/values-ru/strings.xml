@@ -93,4 +93,23 @@
     <string name="dz23">дз23</string>
     <string name="car_logo_description">Логотип автомобиля</string>
     <string name="dz25">дз25</string>
+    <string name="dz26">дз26</string>
+    <string name="add_word">Добавить слово</string>
+    <string name="hint_word">Слово…</string>
+    <string name="button_save">Сохранить</string>
+    <string name="empty_not_saved">Слово не сохранено, потому что поле пустое</string>
+    <string name="room_example">Room example</string>
+    <string name="add">Добавить слово</string>
+    <string name="dz26alt">дз26альт</string>
+    <string name="delete_item">Удалить элемент</string>
+    <string name="new_word_is_added">"Новое слово добавлено успешно: "</string>
+    <string name="please_fill_out_field">Пожалуйста, заполните поле</string>
+    <string name="db_is_deleted_successfully">База данных удалена!</string>
+    <string name="clear_db">Очистить БД</string>
+    <string name="delete_db_title">Очистить БД?</string>
+    <string name="delete_db_message">Вы действительно хотите очистить БД?</string>
+    <string name="delete_item_title">"Удалить "</string>
+    <string name="delete_item_message">"Вы действительно хотите удалить "</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
 </resources>

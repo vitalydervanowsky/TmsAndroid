@@ -5,8 +5,10 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.tmsandroid.databinding.ItemCarBinding
 
-class CarAdapter(private val data: List<Car>) : RecyclerView.Adapter<CarViewHolder>() {
-    var callback: CarViewInterface? = null
+class CarAdapter(
+    private val data: List<Car>,
+    private val delegate: (Car) -> Unit
+) : RecyclerView.Adapter<CarViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CarViewHolder {
         val binding = ItemCarBinding.inflate(LayoutInflater.from(parent.context), parent, false)
@@ -14,12 +16,8 @@ class CarAdapter(private val data: List<Car>) : RecyclerView.Adapter<CarViewHold
     }
 
     override fun onBindViewHolder(holder: CarViewHolder, position: Int) {
-        holder.bind(data[position], callback)
+        holder.bind(data[position], delegate)
     }
 
     override fun getItemCount(): Int = data.size
-
-    fun carViewCallback(callback: CarViewInterface) {
-        this.callback = callback
-    }
 }

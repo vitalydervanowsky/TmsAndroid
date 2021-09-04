@@ -1,5 +1,6 @@
 package com.example.tmsandroid
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -18,6 +19,8 @@ import com.example.tmsandroid.dz.dz22.Dz22Fragment
 import com.example.tmsandroid.dz.dz23.Dz23Fragment
 import com.example.tmsandroid.dz.dz24.Dz24Fragment
 import com.example.tmsandroid.dz.dz25.Dz25Fragment
+import com.example.tmsandroid.dz.dz26.Dz26Activity
+import com.example.tmsandroid.dz.dz26alt.WordActivity
 
 class MenuFragment : Fragment() {
     private var _binding: FragmentMenuBinding? = null
@@ -151,7 +154,7 @@ class MenuFragment : Fragment() {
                     .replace(R.id.container, Dz22Fragment())
                     .commit()
             }
-                    
+
             bDz23.setOnClickListener {
                 parentFragmentManager.beginTransaction()
                     .setCustomAnimations(
@@ -177,7 +180,7 @@ class MenuFragment : Fragment() {
                     .replace(R.id.container, Dz24Fragment())
                     .commit()
             }
-
+            
             bDz25.setOnClickListener {
                 parentFragmentManager.beginTransaction()
                     .setCustomAnimations(
@@ -189,6 +192,16 @@ class MenuFragment : Fragment() {
                     .addToBackStack(null)
                     .replace(R.id.container, Dz25Fragment())
                     .commit()
+            }
+            
+            bDz26.setOnClickListener {
+                val intent = Intent(context, Dz26Activity::class.java)
+                startActivity(intent)
+            }
+
+            bDz26Alt.setOnClickListener {
+                val intent = Intent(context, WordActivity::class.java)
+                startActivity(intent)
             }
         }
     }
