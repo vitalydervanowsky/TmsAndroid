@@ -93,4 +93,23 @@
     <string name="dz23">dz23</string>
     <string name="car_logo_description">Car logo</string>
     <string name="dz25">dz25</string>
+    <string name="dz26">dz26</string>
+    <string name="add_word">Add word</string>
+    <string name="hint_word">Word…</string>
+    <string name="button_save">Save</string>
+    <string name="empty_not_saved">Word not saved because it is empty.</string>
+    <string name="room_example">Room example</string>
+    <string name="add">Add</string>
+    <string name="dz26alt">dz26alt</string>
+    <string name="delete_item">Delete item</string>
+    <string name="new_word_is_added">"New word is added: "</string>
+    <string name="please_fill_out_field">Please fill out field</string>
+    <string name="db_is_deleted_successfully">DB is deleted successfully!</string>
+    <string name="clear_db">Clear db</string>
+    <string name="delete_db_title">Delete all DB?</string>
+    <string name="delete_db_message">Are you sure want to delete Database?</string>
+    <string name="delete_item_title">"Delete "</string>
+    <string name="delete_item_message">"Are you sure want to delete "</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
 </resources>
