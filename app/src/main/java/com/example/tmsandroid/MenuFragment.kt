@@ -19,6 +19,7 @@ import com.example.tmsandroid.dz.dz22.Dz22Fragment
 import com.example.tmsandroid.dz.dz23.Dz23Fragment
 import com.example.tmsandroid.dz.dz24.Dz24Fragment
 import com.example.tmsandroid.dz.dz26.Dz26Activity
+import com.example.tmsandroid.dz.dz26alt.WordActivity
 
 class MenuFragment : Fragment() {
     private var _binding: FragmentMenuBinding? = null
@@ -181,6 +182,11 @@ class MenuFragment : Fragment() {
 
             bDz26.setOnClickListener {
                 val intent = Intent(context, Dz26Activity::class.java)
+                startActivity(intent)
+            }
+
+            bDz26Alt.setOnClickListener {
+                val intent = Intent(context, WordActivity::class.java)
                 startActivity(intent)
             }
         }
