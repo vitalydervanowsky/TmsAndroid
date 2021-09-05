@@ -112,4 +112,6 @@
     <string name="delete_item_message">"Are you sure want to delete "</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
+    <string name="dz27">dz27</string>
+    <string name="meme_image_description">Meme image description</string>
 </resources>

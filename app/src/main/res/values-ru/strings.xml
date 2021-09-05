@@ -112,4 +112,6 @@
     <string name="delete_item_message">"Вы действительно хотите удалить "</string>
     <string name="yes">Да</string>
     <string name="no">Нет</string>
+    <string name="dz27">дз27</string>
+    <string name="meme_image_description">Описание изображения мема</string>
 </resources>
