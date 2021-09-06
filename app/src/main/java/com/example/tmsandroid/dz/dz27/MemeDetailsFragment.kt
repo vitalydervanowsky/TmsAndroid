@@ -39,18 +39,20 @@ class MemeDetailsFragment : Fragment() {
                 val textDate = date.substringBefore('T') + " at " + date.substringAfter('T')
                 tvMemeDate.text = textDate
                 tvMemeTitle.text = it.submission_title
-                if (isImage(it.submission_url))
-                    Glide.with(ivMemeImage)
-                        .load(it.submission_url)
-                        .placeholder(R.drawable.img_placeholder_300_300)
-                        .error(R.drawable.img_placeholder_300_300)
-                        .into(ivMemeImage)
-                if (isYoutube(it.submission_url))
-                    Glide.with(ivMemeImage)
-                        .load(R.drawable.img_youtube_placeholder)
-                        .placeholder(R.drawable.img_placeholder_300_300)
-                        .error(R.drawable.img_placeholder_300_300)
-                        .into(ivMemeImage)
+                when {
+                    isImage(it.submission_url) ->
+                        Glide.with(ivMemeImage)
+                            .load(it.submission_url)
+                            .placeholder(R.drawable.img_placeholder_300_300)
+                            .error(R.drawable.img_placeholder_300_300)
+                            .into(ivMemeImage)
+                    isYoutube(it.submission_url) ->
+                        Glide.with(ivMemeImage)
+                            .load(R.drawable.img_youtube_placeholder)
+                            .placeholder(R.drawable.img_placeholder_300_300)
+                            .error(R.drawable.img_placeholder_300_300)
+                            .into(ivMemeImage)
+                }
                 val author = "author: " + it.author
                 tvMemeAuthor.text = author
             }

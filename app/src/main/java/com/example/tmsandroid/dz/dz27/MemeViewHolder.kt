@@ -13,18 +13,21 @@ class MemeViewHolder(val binding: ItemMemeBinding) : RecyclerView.ViewHolder(bin
             val textDate = date.substringBefore('T') + " at " + date.substringAfter('T')
             tvMemeDate.text = textDate
             tvMemeTitle.text = meme.submission_title
-            if (isImage(meme.submission_url))
-                Glide.with(itemView)
-                    .load(meme.submission_url)
-                    .placeholder(R.drawable.img_placeholder_300_300)
-                    .error(R.drawable.img_placeholder_300_300)
-                    .into(ivMemeImage)
-            if (isYoutube(meme.submission_url))
-                Glide.with(itemView)
-                    .load(R.drawable.img_youtube_placeholder)
-                    .placeholder(R.drawable.img_placeholder_300_300)
-                    .error(R.drawable.img_placeholder_300_300)
-                    .into(ivMemeImage)
+
+            when {
+                isImage(meme.submission_url) ->
+                    Glide.with(itemView)
+                        .load(meme.submission_url)
+                        .placeholder(R.drawable.img_placeholder_300_300)
+                        .error(R.drawable.img_placeholder_300_300)
+                        .into(ivMemeImage)
+                isYoutube(meme.submission_url) ->
+                    Glide.with(itemView)
+                        .load(R.drawable.img_youtube_placeholder)
+                        .placeholder(R.drawable.img_placeholder_300_300)
+                        .error(R.drawable.img_placeholder_300_300)
+                        .into(ivMemeImage)
+            }
             itemView.setOnClickListener {
                 delegate(meme)
             }

@@ -5,6 +5,7 @@ import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import retrofit2.create
 import retrofit2.http.GET
 
 interface ApiMeme {
@@ -27,7 +28,7 @@ interface ApiMeme {
                 .baseUrl(BASE_URL)
                 .client(okHttpClient)
                 .build()
-            return retrofit.create(ApiMeme::class.java)
+            return retrofit.create()
         }
     }
 }
