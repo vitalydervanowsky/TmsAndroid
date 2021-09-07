@@ -22,6 +22,7 @@ import com.example.tmsandroid.dz.dz25.Dz25Fragment
 import com.example.tmsandroid.dz.dz26.Dz26Activity
 import com.example.tmsandroid.dz.dz26alt.WordActivity
 import com.example.tmsandroid.dz.dz27.MemeListFragment
+import com.example.tmsandroid.dz.scorebat.MatchListFragment
 
 class MenuFragment : Fragment() {
     private var _binding: FragmentMenuBinding? = null
@@ -209,6 +210,14 @@ class MenuFragment : Fragment() {
                 parentFragmentManager.beginTransaction()
                     .addToBackStack(null)
                     .replace(R.id.container, MemeListFragment())
+                    .commit()
+
+            }
+
+            bDz27Alt.setOnClickListener {
+                parentFragmentManager.beginTransaction()
+                    .addToBackStack(null)
+                    .replace(R.id.container, MatchListFragment())
                     .commit()
 
             }
