@@ -115,4 +115,21 @@
     <string name="dz27">dz27</string>
     <string name="meme_image_description">Meme image description</string>
     <string name="dz27alt">dz27alt</string>
+    <string name="dz28" translatable="false">dz28</string>
+    <!-- Titles -->
+    <string name="blur_title" translatable="false">Select Blur Amount</string>
+    <!-- Buttons -->
+    <string name="select_image" translatable="false">Select Image</string>
+    <string name="go" translatable="false">Go</string>
+    <string name="see_file" translatable="false">See File</string>
+    <!-- Content descriptions -->
+    <string name="description_image" translatable="false">The image to blur and save.</string>
+    <!-- Blur levels -->
+    <string name="blur_lv_1" translatable="false">A little blurred</string>
+    <string name="blur_lv_2" translatable="false">More blurred</string>
+    <string name="blur_lv_3" translatable="false">The most blurred</string>
+    <string name="cancel_work" translatable="false">Cancel Work</string>
+    <!-- Messages -->
+    <string name="set_permissions_in_settings" translatable="false">Go to Settings -> Apps and Notifications ->
+        WorkManager Demo -> App Permissions and grant access to Storage.</string>
 </resources>
