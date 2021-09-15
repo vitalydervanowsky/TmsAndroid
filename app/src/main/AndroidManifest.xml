@@ -16,12 +16,6 @@
             android:name=".dz.dz26alt.WordActivity"
             android:exported="true" />
         <activity
-            android:name=".dz.dz26.NewWordActivity"
-            android:exported="true" />
-        <activity
-            android:name=".dz.dz26.Dz26Activity"
-            android:exported="true" />
-        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

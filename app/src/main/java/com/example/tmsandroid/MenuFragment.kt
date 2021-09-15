@@ -19,7 +19,7 @@ import com.example.tmsandroid.dz.dz22.Dz22Fragment
 import com.example.tmsandroid.dz.dz23.Dz23Fragment
 import com.example.tmsandroid.dz.dz24.Dz24Fragment
 import com.example.tmsandroid.dz.dz25.Dz25Fragment
-import com.example.tmsandroid.dz.dz26.Dz26Activity
+import com.example.tmsandroid.dz.dz26.Dz26Fragment
 import com.example.tmsandroid.dz.dz26alt.WordActivity
 import com.example.tmsandroid.dz.dz27.MemeListFragment
 import com.example.tmsandroid.dz.scorebat.MatchListFragment
@@ -197,8 +197,16 @@ class MenuFragment : Fragment() {
             }
             
             bDz26.setOnClickListener {
-                val intent = Intent(context, Dz26Activity::class.java)
-                startActivity(intent)
+                parentFragmentManager.beginTransaction()
+                    .setCustomAnimations(
+                        R.anim.slide_in_right,
+                        R.anim.fade_out,
+                        R.anim.fade_in,
+                        R.anim.slide_out_right
+                    )
+                    .addToBackStack(null)
+                    .replace(R.id.container, Dz26Fragment())
+                    .commit()
             }
 
             bDz26Alt.setOnClickListener {
@@ -211,7 +219,6 @@ class MenuFragment : Fragment() {
                     .addToBackStack(null)
                     .replace(R.id.container, MemeListFragment())
                     .commit()
-
             }
 
             bDz27Alt.setOnClickListener {
@@ -219,7 +226,6 @@ class MenuFragment : Fragment() {
                     .addToBackStack(null)
                     .replace(R.id.container, MatchListFragment())
                     .commit()
-
             }
         }
     }
