@@ -8,15 +8,15 @@ import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
-import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.tmsandroid.R
-import com.example.tmsandroid.databinding.FragmentListBinding
+import com.example.tmsandroid.databinding.FragmentListWordsBinding
+import com.example.tmsandroid.dz.dz26alt.fragments.add.AddFragment
 import com.example.tmsandroid.dz.dz26alt.viewmodel.WordViewModel
 
-class ListFragment : Fragment() {
+class ListWordsFragment : Fragment() {
 
-    private var _binding: FragmentListBinding? = null
+    private var _binding: FragmentListWordsBinding? = null
     private val binding get() = _binding!!
     private val wordViewModel: WordViewModel by activityViewModels()
 
@@ -24,15 +24,14 @@ class ListFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentListBinding.inflate(inflater, container, false)
-
+        _binding = FragmentListWordsBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val deleteStrings = listOf<String>(
+        val deleteStrings = listOf(
             getString(R.string.delete_item_title),
             getString(R.string.delete_item_message),
             getString(R.string.yes),
@@ -49,7 +48,10 @@ class ListFragment : Fragment() {
         binding.rvList.layoutManager = LinearLayoutManager(requireContext())
 
         binding.fabAdd.setOnClickListener {
-            findNavController().navigate(R.id.action_listFragment_to_addFragment)
+            parentFragmentManager.beginTransaction()
+                .addToBackStack(null)
+                .replace(R.id.container, AddFragment())
+                .commit()
         }
 
         binding.bClearDb.setOnClickListener {
@@ -69,7 +71,5 @@ class ListFragment : Fragment() {
                 .create()
             builder.show()
         }
-
     }
-
 }
