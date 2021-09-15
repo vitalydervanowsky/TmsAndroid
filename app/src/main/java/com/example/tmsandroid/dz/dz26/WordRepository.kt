@@ -16,4 +16,9 @@ class WordRepository(private val wordDao: WordDao) {
     suspend fun deleteAll() {
         wordDao.deleteAll()
     }
+
+    @WorkerThread
+    suspend fun deleteWord(word: Word) {
+        wordDao.deleteWord(word)
+    }
 }

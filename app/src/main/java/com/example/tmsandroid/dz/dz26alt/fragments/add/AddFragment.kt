@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
-import androidx.navigation.fragment.findNavController
 import com.example.tmsandroid.R
 import com.example.tmsandroid.databinding.FragmentAddBinding
 import com.example.tmsandroid.dz.dz26alt.model.Word
@@ -45,7 +44,7 @@ class AddFragment : Fragment() {
                 toastText,
                 Toast.LENGTH_SHORT
             ).show()
-            findNavController().navigate(R.id.action_addFragment_to_listFragment)
+            activity?.onBackPressed()
         } else {
             val toastText = getString(R.string.please_fill_out_field)
             Toast.makeText(requireContext(), toastText, Toast.LENGTH_SHORT).show()
@@ -55,5 +54,4 @@ class AddFragment : Fragment() {
     private fun inputCheck(word: Editable): Boolean {
         return word.isNotEmpty()
     }
-
 }

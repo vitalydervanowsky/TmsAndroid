@@ -3,28 +3,33 @@ package com.example.tmsandroid.dz.dz26
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.tmsandroid.R
 
-class WordListAdapter : ListAdapter<Word, WordListAdapter.WordViewHolder>(WordsComparator()) {
+class WordListAdapter(private val delete: (Word) -> Unit) :
+    ListAdapter<Word, WordListAdapter.WordViewHolder>(WordsComparator()) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): WordViewHolder {
         return WordViewHolder.create(parent)
     }
 
     override fun onBindViewHolder(holder: WordViewHolder, position: Int) {
-        val current = getItem(position)
-        holder.bind(current.word)
+        holder.bind(getItem(position), delete)
     }
 
     class WordViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        private val wordItemView: TextView = itemView.findViewById(R.id.tv_word)
+        private val wordItemView = itemView.findViewById<TextView>(R.id.tv_word)
+        private val buttonDelete = itemView.findViewById<ImageView>(R.id.b_delete_item)
 
-        fun bind(text: String?) {
-            wordItemView.text = text
+        fun bind(word: Word, delete: (Word) -> Unit) {
+            wordItemView.text = word.word
+            buttonDelete.setOnClickListener {
+                delete(word)
+            }
         }
 
         companion object {
