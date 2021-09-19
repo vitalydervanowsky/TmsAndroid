@@ -14,7 +14,7 @@ class MatchViewModel : ViewModel() {
 
     private val apiScorebat = ApiMatch.create().getResponse()
 
-    fun getScores() {
+    init {
         apiScorebat.enqueue(object : Callback<MatchResponse> {
             override fun onResponse(
                 call: Call<MatchResponse>,
