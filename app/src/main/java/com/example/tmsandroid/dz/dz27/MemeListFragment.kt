@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.ViewModelProviders
 import com.example.tmsandroid.R
 import com.example.tmsandroid.databinding.FragmentMemeListBinding
@@ -15,14 +16,7 @@ class MemeListFragment : Fragment() {
     private var _binding: FragmentMemeListBinding? = null
     private val binding get() = _binding!!
 
-    private lateinit var memesViewModel: MemeViewModel
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        val context = this.context as AppCompatActivity
-        memesViewModel = activity.run { ViewModelProviders.of(context)[MemeViewModel::class.java] }
-        memesViewModel.getMemes()
-    }
+    private val memesViewModel: MemeViewModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

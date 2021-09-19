@@ -17,7 +17,7 @@ class MemeViewModel: ViewModel() {
 
     private val apiLastMemes = ApiMeme.create().getMemes()
 
-    fun getMemes() {
+    init {
         viewModelScope.launch(Dispatchers.IO) {
             apiLastMemes.enqueue(object : Callback<MemeResponse> {
                 override fun onResponse(call: Call<MemeResponse>, response: Response<MemeResponse>) {

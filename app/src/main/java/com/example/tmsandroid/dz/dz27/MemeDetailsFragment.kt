@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.ViewModelProviders
 import com.bumptech.glide.Glide
 import com.example.tmsandroid.R
@@ -15,13 +16,9 @@ class MemeDetailsFragment : Fragment() {
 
     private var _binding: FragmentMemeDetailsBinding? = null
     private val binding get() = _binding!!
-    private lateinit var memeViewModel: MemeViewModel
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        val context = this.context as AppCompatActivity
-        memeViewModel = activity.run { ViewModelProviders.of(context)[MemeViewModel::class.java] }
-    }
+    private val memeViewModel: MemeViewModel by activityViewModels()
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
