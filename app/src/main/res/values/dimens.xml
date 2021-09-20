@@ -4,4 +4,5 @@
     <integer name="delay_anim_scale">500</integer>
     <dimen name="big_padding">16dp</dimen>
     <dimen name="min_height">48dp</dimen>
+    <dimen name="widget_margin">6dp</dimen>
 </resources>

@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.TmsAndroid.AppWidget.Container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:padding="@dimen/widget_margin"
+    android:theme="@style/AppTheme.AppWidgetContainer">
+
+    <TextView
+        android:id="@+id/appwidget_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:contentDescription=""
+        android:text=""
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/appwidget_title"
+        style="@style/Widget.TmsAndroid.AppWidget.InnerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:contentDescription=""
+        android:layout_marginTop="8dp"
+        android:text=""
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/appwidget_competition"
+        style="@style/Widget.TmsAndroid.AppWidget.InnerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:contentDescription=""
+        android:text=""
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
