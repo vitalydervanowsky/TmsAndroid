@@ -14,4 +14,14 @@
         <item name="android:background">@android:color/holo_orange_light</item>
         <item name="android:textAppearance">@android:style/TextAppearance.Large</item>
     </style>
+
+    <style name="Widget.TmsAndroid.AppWidget.Container" parent="android:Widget">
+        <item name="android:id">@android:id/background</item>
+        <item name="android:background">?android:attr/colorBackground</item>
+    </style>
+
+    <style name="Widget.TmsAndroid.AppWidget.InnerView" parent="android:Widget">
+        <item name="android:background">?android:attr/colorBackground</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
 </resources>

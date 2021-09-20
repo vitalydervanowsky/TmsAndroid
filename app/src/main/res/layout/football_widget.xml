@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.TmsAndroid.AppWidget.Container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:theme="@style/AppTheme.AppWidgetContainer">
+
+    <ImageView
+        android:id="@+id/appwidget_image"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="@string/app_widget_description" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/widget_margin" >
+
+        <TextView
+            android:id="@+id/appwidget_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/appwidget_title"
+            style="@style/Widget.TmsAndroid.AppWidget.InnerView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:lines="1"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/appwidget_competition"
+            style="@style/Widget.TmsAndroid.AppWidget.InnerView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

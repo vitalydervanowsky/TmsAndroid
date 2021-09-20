@@ -114,7 +114,7 @@
     <string name="no">No</string>
     <string name="dz27">dz27</string>
     <string name="meme_image_description">Meme image description</string>
-    <string name="dz27alt">dz27alt</string>
+    <string name="dz27alt">scorebat</string>
     <string name="dz28" translatable="false">dz28</string>
     <!-- Titles -->
     <string name="blur_title" translatable="false">Select Blur Amount</string>
@@ -133,4 +133,5 @@
     <string name="set_permissions_in_settings" translatable="false">Go to Settings -> Apps and Notifications ->
         WorkManager Demo -> App Permissions and grant access to Storage.</string>
     <string name="dz29" translatable="false">dz29</string>
+    <string name="app_widget_description" translatable="false">There is a result of the last match from scorebat.com</string>
 </resources>

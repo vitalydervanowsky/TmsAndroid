@@ -30,7 +30,8 @@ class MatchDetailsFragment : Fragment() {
 
         matchViewModel.currentMatchLiveData.observe(viewLifecycleOwner, {
             binding.apply {
-                tvMatchDate.text = it.date
+                val date = it.date.substringBefore('T') + " " + it.date.substring(11, 16)
+                tvMatchDate.text = date
                 Glide.with(ivMatchLogo)
                     .load(it.thumbnail)
                     .placeholder(R.drawable.img_placeholder_300_300)
@@ -39,6 +40,10 @@ class MatchDetailsFragment : Fragment() {
                 tvMatchLeague.text = it.competition
             }
         })
+    }
 
+    override fun onDestroy() {
+        super.onDestroy()
+        _binding = null
     }
 }
