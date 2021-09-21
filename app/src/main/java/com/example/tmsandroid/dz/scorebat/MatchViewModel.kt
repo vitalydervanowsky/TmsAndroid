@@ -11,16 +11,18 @@ class MatchViewModel : ViewModel() {
     val matchesLiveData = MutableLiveData<MatchResponse>()
 
     val currentMatchLiveData = MutableLiveData<Match>()
+    val lastMatchLiveData = MutableLiveData<Match>()
 
     private val apiScorebat = ApiMatch.create().getResponse()
 
-    fun getScores() {
+    init {
         apiScorebat.enqueue(object : Callback<MatchResponse> {
             override fun onResponse(
                 call: Call<MatchResponse>,
                 response: Response<MatchResponse>
             ) {
                 matchesLiveData.value = response.body()
+                lastMatchLiveData.value = response.body()?.response?.first()
             }
 
             override fun onFailure(call: Call<MatchResponse>, t: Throwable) {

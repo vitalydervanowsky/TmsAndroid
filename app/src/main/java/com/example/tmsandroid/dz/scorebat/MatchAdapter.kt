@@ -28,7 +28,8 @@ class MatchViewHolder(val binding: ItemMatchBinding) : RecyclerView.ViewHolder(b
 
     fun bind(match: Match, delegate: (Match) -> Unit) {
         binding.apply {
-            tvMatchDate.text = match.date
+            val date = match.date.substringBefore('T') + " " + match.date.substring(11, 16)
+            tvMatchDate.text = date
             Glide.with(itemView)
                 .load(match.thumbnail)
                 .placeholder(R.drawable.img_placeholder_300_300)
@@ -38,8 +39,6 @@ class MatchViewHolder(val binding: ItemMatchBinding) : RecyclerView.ViewHolder(b
         }
         itemView.setOnClickListener {
             delegate(match)
-
         }
-
     }
 }
