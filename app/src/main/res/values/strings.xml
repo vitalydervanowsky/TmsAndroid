@@ -134,4 +134,5 @@
         WorkManager Demo -> App Permissions and grant access to Storage.</string>
     <string name="dz29" translatable="false">dz29</string>
     <string name="app_widget_description" translatable="false">There is a result of the last match from scorebat.com</string>
+    <string name="dark_place">You are in a dark place</string>
 </resources>
