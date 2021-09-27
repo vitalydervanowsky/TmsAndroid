@@ -23,6 +23,7 @@ import com.example.tmsandroid.dz.dz26alt.fragments.list.ListWordsFragment
 import com.example.tmsandroid.dz.dz27.MemeListFragment
 import com.example.tmsandroid.dz.dz28.BlurFragment
 import com.example.tmsandroid.dz.dz29.ContactListFragment
+import com.example.tmsandroid.dz.dz31.MapsFragment
 import com.example.tmsandroid.dz.scorebat.MatchListFragment
 
 class MenuFragment : Fragment() {
@@ -236,6 +237,13 @@ class MenuFragment : Fragment() {
                 parentFragmentManager.beginTransaction()
                     .addToBackStack(null)
                     .replace(R.id.container, ContactListFragment())
+                    .commit()
+            }
+
+            bDz31.setOnClickListener {
+                parentFragmentManager.beginTransaction()
+                    .addToBackStack(null)
+                    .replace(R.id.container, MapsFragment())
                     .commit()
             }
         }
