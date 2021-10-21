@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_name">Tms Android (ru)</string>
     <string name="dz14">дз14</string>
     <string name="dz15">дз15</string>
     <string name="dz16">дз16</string>
@@ -115,4 +114,5 @@
     <string name="dz27">дз27</string>
     <string name="meme_image_description">Описание изображения мема</string>
     <string name="dz27alt">scorebat</string>
+    <string name="dark_place">Вы в темном месте</string>
 </resources>

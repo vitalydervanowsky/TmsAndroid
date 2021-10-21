@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Tms Android</string>
+    <string name="app_name" translatable="false">Tms Android</string>
     <string name="dz14">dz14</string>
     <string name="dz15">dz15</string>
     <string name="dz16">dz16</string>
@@ -134,4 +134,6 @@
         WorkManager Demo -> App Permissions and grant access to Storage.</string>
     <string name="dz29" translatable="false">dz29</string>
     <string name="app_widget_description" translatable="false">There is a result of the last match from scorebat.com</string>
+    <string name="dark_place">You are in a dark place</string>
+    <string name="google_maps" translatable="false">Google Maps</string>
 </resources>
