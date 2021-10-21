@@ -38,12 +38,10 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
     }
 
     override fun onSensorChanged(event: SensorEvent?) {
-        if (event != null) {
-            if (event.values[0] < 15) {
-                binding.tvLightSensor.visibility = View.VISIBLE
-            } else {
-                binding.tvLightSensor.visibility = View.GONE
-            }
+        binding.tvLightSensor.visibility = if (event != null && event.values[0] < 15) {
+            View.VISIBLE
+        } else {
+            View.GONE
         }
     }
 
